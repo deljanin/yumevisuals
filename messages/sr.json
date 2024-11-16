@@ -1,0 +1,183 @@
+{
+  "Layout": {
+    "Navbar": [
+      { "Text": "Početna", "Link": "/" },
+      {
+        "Text": "Naš rad",
+        "Link": "/our-work"
+      },
+      {
+        "Text": "O nama",
+        "Link": "/about"
+      },
+      {
+        "Text": "Kontakt",
+        "Link": "/#contact"
+      }
+    ],
+    "Footer": "TODO"
+  },
+  "HomePage": {
+    "Hero": {
+      "Title": "Vaša Vizija, Naše * Remek-delo",
+      "Subtitle": "Pretvaramo vaše vizije u zapanjujuće video snimke koji * će vas naterati da kažete, „Vau!“",
+      "CTA": "Kontaktirajte nas"
+    },
+    "Videography": {
+      "Title": "Videografija",
+      "Subtitle": "Naše usluge video produkcije su dizajnirane da podignu vaš sadržaj na viši nivo. Od promo materijala koji privlače pažnju do stručnog video editovanja koje daje dodatni efekat vašem materijalu, imamo veštine i kreativnost da to ostvarimo.",
+      "CTA": "Kontaktirajte nas"
+    },
+    "Video editing": {
+      "Title": "Video montaža",
+      "Subtitle": "Naše usluge video produkcije su dizajnirane da podignu vaš sadržaj na viši nivo. Od promo materijala koji privlače pažnju do stručnog video editovanja koje daje dodatni efekat vašem materijalu, imamo veštine i kreativnost da to ostvarimo.",
+      "CTA": "Kontaktirajte nas"
+    },
+    "Photography": {
+      "Title": "Fotografija",
+      "Subtitle": "Lorem",
+      "CTA": "Galerija fotografija"
+    },
+    "Drone filming": {
+      "Title": "Snimanje dronom",
+      "Subtitle": "Lorem",
+      "CTA": "Pogledajte snimke"
+    },
+    "Testimonials": {
+      "Title": "Ne verujte samo nama, * verujte njima",
+      "Testimonials": [
+        {
+          "Name": "Rachel Johnson1",
+          "Position": "Menadžer Projekata u Stellar Creations",
+          "Text": "Naručila sam mnogo video snimaka i uvek su izuzetni! Toliko pažnje posvećeno detaljima i zaista shvata viziju koju imam na umu. Spremna sam da postavim sledeću narudžbinu. Nećete se pokajati ako odaberete Yume."
+        },
+        {
+          "Name": "Rachel Johnson2",
+          "Position": "Menadžer Projekata u Stellar Creations",
+          "Text": "Naručila sam mnogo video snimaka i uvek su izuzetni! Toliko pažnje posvećeno detaljima i zaista shvata viziju koju imam na umu. Spremna sam da postavim sledeću narudžbinu. Nećete se pokajati ako odaberete Yume."
+        },
+        {
+          "Name": "Rachel Johnson3",
+          "Position": "Menadžer Projekata u Stellar Creations",
+          "Text": "Naručila sam mnogo video snimaka i uvek su izuzetni! Toliko pažnje posvećeno detaljima i zaista shvata viziju koju imam na umu. Spremna sam da postavim sledeću narudžbinu. Nećete se pokajati ako odaberete Yume."
+        },
+        {
+          "Name": "Rachel Johnson4",
+          "Position": "Menadžer Projekata u Stellar Creations",
+          "Text": "Naručila sam mnogo video snimaka i uvek su izuzetni! Toliko pažnje posvećeno detaljima i zaista shvata viziju koju imam na umu. Spremna sam da postavim sledeću narudžbinu. Nećete se pokajati ako odaberete Yume."
+        },
+        {
+          "Name": "Rachel Johnson5",
+          "Position": "Menadžer Projekata u Stellar Creations",
+          "Text": "Naručila sam mnogo video snimaka i uvek su izuzetni! Toliko pažnje posvećeno detaljima i zaista shvata viziju koju imam na umu. Spremna sam da postavim sledeću narudžbinu. Nećete se pokajati ako odaberete Yume."
+        }
+      ]
+    },
+    "Our services": [
+      {
+        "Title": "Videografija",
+        "Subtitle": [
+          "Kompletna produkcija",
+          "Za događaje, reklame i kreativne projekte"
+        ],
+        "Price": "Od 150$",
+        "List": [
+          "Kompletna video produkcija (događaji, reklame, muzički spotovi, itd.)",
+          "Uključuje: Pre-produkcija, snimanje, post-produkcija",
+          "Prednosti: HD kvalitet, profesionalno pripovedanje, prilagodljiv stil"
+        ],
+        "CTA": "Zatražite ponudu"
+      },
+      {
+        "Title": "Video montaža",
+        "Subtitle": [
+          "Kompletna produkcija",
+          "Za događaje, reklame i kreativne projekte"
+        ],
+        "Price": "Od 100$",
+        "List": [
+          "Prerada snimaka u konačni proizvod",
+          "Uključuje: Sečenje, bojenje, zvučni dizajn, specijalni efekti",
+          "Prednosti: Glatki prelazi, uglađeni vizuali, optimizovani za platforme"
+        ],
+        "CTA": "Zatražite ponudu"
+      },
+      {
+        "Title": "Fotografija",
+        "Subtitle": [
+          "Kompletna produkcija",
+          "Za događaje, reklame i kreativne projekte"
+        ],
+        "Price": "Od 100$",
+        "List": [
+          "Profesionalna fotografija (portreti, događaji, proizvodi, urednički snimci)",
+          "Uključuje: Fotografisanje, editovanje, visokokvalitetne završne slike",
+          "Prednosti: Oštre, živopisne slike prilagođene vašoj viziji"
+        ],
+        "CTA": "Zatražite ponudu"
+      },
+      {
+        "Title": "Snimanje dronom",
+        "Subtitle": [
+          "Kompletna produkcija",
+          "Za događaje, reklame i kreativne projekte"
+        ],
+        "Price": "Od 200$",
+        "List": [
+          "Vazdušno snimanje za filmske pejzaže i jedinstvene uglove",
+          "Uključuje: Sertifikovana dron operacija, 4K snimci, post-produkcija",
+          "Prednosti: Dinamični prikazi, idealno za nekretnine, putovanja, dramatične kadrove"
+        ],
+        "CTA": "Zatražite ponudu"
+      }
+    ],
+    "FAQ": {
+      "Title": "Imate pitanja? Imamo odgovore!",
+      "List": [
+        {
+          "Question": "pitanje",
+          "Answer": "odgovor"
+        },
+        {
+          "Question": "pitanje",
+          "Answer": "odgovor"
+        },
+        {
+          "Question": "pitanje",
+          "Answer": "odgovor"
+        },
+        {
+          "Question": "pitanje",
+          "Answer": "odgovor"
+        },
+        {
+          "Question": "pitanje",
+          "Answer": "odgovor"
+        }
+      ]
+    },
+    "Contact": {
+      "Title": "Stvorimo nešto neverovatno",
+      "Subtitle": "Imate projekat na umu ili trebate više informacija o našim uslugama? Voleli bismo da čujemo od vas. * Javite se da oživimo vašu viziju uz Yume Visuals.",
+      "NameInput": {
+        "Title": "Ime",
+        "Placeholder": "Jennifer"
+      },
+      "EmailInput": {
+        "Title": "Email",
+        "Placeholder": "jennifer@someemail.com"
+      },
+      "MessageInput": {
+        "Title": "Video koji imate na umu",
+        "Placeholder": "Trebam da editujete moje svadbene snimke..."
+      },
+      "CTA": "Pošaljite poruku"
+    }
+  },
+  "AboutPage": {
+    "Hero": {
+      "Title": "O nama",
+      "CTA": ""
+    }
+  }
+}

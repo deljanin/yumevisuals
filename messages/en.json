@@ -1,0 +1,183 @@
+{
+  "Layout": {
+    "Navbar": {
+      "Home": { "Text": "Home", "Link": "/" },
+      "Work": {
+        "Text": "Our work",
+        "Link": "/our-work"
+      },
+      "About": {
+        "Text": "About us",
+        "Link": "/about"
+      },
+      "Contact": {
+        "Text": "Contact",
+        "Link": "/#contact"
+      }
+    },
+    "Footer": "TODO"
+  },
+  "HomePage": {
+    "Hero": {
+      "Title": "Your Vision, Our * Masterpiece",
+      "Subtitle": "We transform your visions into mind-blowing videos that * will have you saying, \"Wow!\"",
+      "CTA": "Contact us"
+    },
+    "Videography": {
+      "Title": "Videography",
+      "Subtitle": "Our video production services are designed to take your content to the next level. From viral-worthy promos that'll make heads turn to expert video editing that adds that extra oomph to your footage, we've got the skills and creativity to make it happen.",
+      "CTA": "Contact us"
+    },
+    "Video editing": {
+      "Title": "Video editing",
+      "Subtitle": "Our video production services are designed to take your content to the next level. From viral-worthy promos that'll make heads turn to expert video editing that adds that extra oomph to your footage, we've got the skills and creativity to make it happen.",
+      "CTA": "Contact us"
+    },
+    "Photography": {
+      "Title": "Photography",
+      "Subtitle": "Lorem",
+      "CTA": "Photo gallery"
+    },
+    "Drone filming": {
+      "Title": "Drone filming",
+      "Subtitle": "Lorem",
+      "CTA": "Explore footage"
+    },
+    "Testimonials": {
+      "Title": "Don’t take our word for it, * take theirs",
+      "Testimonials": [
+        {
+          "Name": "Rachel Johnson1",
+          "Position": "Project Manager at Stellar Creations",
+          "Text": "I've ordered many videos and they always come out exceptional! So much attention to detail and truly gets the vision I have in mind. About to place my next order. You won't regret choosing Yume."
+        },
+        {
+          "Name": "Rachel Johnson2",
+          "Position": "Project Manager at Stellar Creations",
+          "Text": "I've ordered many videos and they always come out exceptional! So much attention to detail and truly gets the vision I have in mind. About to place my next order. You won't regret choosing Yume."
+        },
+        {
+          "Name": "Rachel Johnson3",
+          "Position": "Project Manager at Stellar Creations",
+          "Text": "I've ordered many videos and they always come out exceptional! So much attention to detail and truly gets the vision I have in mind. About to place my next order. You won't regret choosing Yume."
+        },
+        {
+          "Name": "Rachel Johnson4",
+          "Position": "Project Manager at Stellar Creations",
+          "Text": "I've ordered many videos and they always come out exceptional! So much attention to detail and truly gets the vision I have in mind. About to place my next order. You won't regret choosing Yume."
+        },
+        {
+          "Name": "Rachel Johnson5",
+          "Position": "Project Manager at Stellar Creations",
+          "Text": "I've ordered many videos and they always come out exceptional! So much attention to detail and truly gets the vision I have in mind. About to place my next order. You won't regret choosing Yume."
+        }
+      ]
+    },
+    "Our services": [
+      {
+        "Title": "Videography",
+        "Subtitle": [
+          "Full-service production",
+          "For events, commercials, and creative projects"
+        ],
+        "Price": "From 150$",
+        "List": [
+          "Full-service video production (events, commercials, music videos, etc.)",
+          "Includes: Pre-production, shooting, post-production",
+          "Benefits: HD quality, professional storytelling, adaptable style"
+        ],
+        "CTA": "Get an offer"
+      },
+      {
+        "Title": "Video editing",
+        "Subtitle": [
+          "Full-service production",
+          "For events, commercials, and creative projects"
+        ],
+        "Price": "From 100$",
+        "List": [
+          "Refines footage into a seamless final product",
+          "Includes: Cutting, color grading, sound design, special effects",
+          "Benefits: Smooth transitions, polished visuals, platform-optimized"
+        ],
+        "CTA": "Get an offer"
+      },
+      {
+        "Title": "Photography",
+        "Subtitle": [
+          "Full-service production",
+          "For events, commercials, and creative projects"
+        ],
+        "Price": "From 100$",
+        "List": [
+          "Professional photography (portraits, events, products, editorial shoots)",
+          "Includes: Full photoshoot, editing, high-quality final images",
+          "Benefits: Sharp, vibrant images tailored to your vision"
+        ],
+        "CTA": "Get an offer"
+      },
+      {
+        "Title": "Drone filming",
+        "Subtitle": [
+          "Full-service production",
+          "For events, commercials, and creative projects"
+        ],
+        "Price": "From 200$",
+        "List": [
+          "Aerial videography for cinematic landscapes and unique angles",
+          "Includes: Certified drone operation, 4K footage, post-production",
+          "Benefits: Dynamic views, ideal for real estate, travel, dramatic shots"
+        ],
+        "CTA": "Get an offer"
+      }
+    ],
+    "FAQ": {
+      "Title": "Got questions? We've got answers!",
+      "List": [
+        {
+          "Question": "question",
+          "Answer": "answer"
+        },
+        {
+          "Question": "question",
+          "Answer": "answer"
+        },
+        {
+          "Question": "question",
+          "Answer": "answer"
+        },
+        {
+          "Question": "question",
+          "Answer": "answer"
+        },
+        {
+          "Question": "question",
+          "Answer": "answer"
+        }
+      ]
+    },
+    "Contact": {
+      "Title": "Let’s create something amazing",
+      "Subtitle": "Have a project in mind or need more information about our services? We’d love to hear from you. * Get in touch to bring your vision to life with Yume Visuals.",
+      "NameInput": {
+        "Title": "Name",
+        "Placeholder": "Jennifer"
+      },
+      "EmailInput": {
+        "Title": "Email",
+        "Placeholder": "jennifer@someemail.com"
+      },
+      "MessageInput": {
+        "Title": "Video in mind",
+        "Placeholder": "I need you to edit my wedding videos..."
+      },
+      "CTA": "Send message"
+    }
+  },
+  "AboutPage": {
+    "Hero": {
+      "Title": "About Us",
+      "CTA": ""
+    }
+  }
+}

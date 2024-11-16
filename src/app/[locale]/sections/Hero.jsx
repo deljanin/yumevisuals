@@ -1,6 +1,7 @@
 import formatLineBreak from '@/utils/formatLineBreak';
 import Button from '../../../components/Button';
 import { useTranslations } from 'next-intl';
+import Link from 'next/link';
 
 export default function Hero() {
   const t = useTranslations('HomePage.Hero');

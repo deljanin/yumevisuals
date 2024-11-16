@@ -16,9 +16,9 @@ export default function Hero() {
         <p className="text-2xl text-center mb-10 text-white">
           {formatLineBreak(t('Subtitle'))}
         </p>
-        <a href="/#contact">
+        <Link href="/#contact">
           <Button text={t('CTA')} className="text-xl px-6 py-3" />
-        </a>
+        </Link>
         <div className="absolute top-0 left-0 right-0 bottom-0 -z-10">
           {/* bg-[url('/hero.png')] bg-cover bg-center */}
           {/* <video

@@ -74,6 +74,7 @@
       }
     },
     "Our services": {
+      "Title": "Usluge koje pružamo",
       "Service0": {
         "Title": "Videografija",
         "Subtitle1": "Kompletna produkcija",
@@ -150,11 +151,15 @@
       "Subtitle": "Imate projekat na umu ili trebate više informacija o našim uslugama? Voleli bismo da čujemo od vas. * Javite se da oživimo vašu viziju uz Yume Visuals.",
       "NameInput": {
         "Title": "Ime*",
-        "Placeholder": "Jennifer"
+        "Placeholder": "Jennifer",
+        "Error": "Ime je predugačko",
+        "ErrorRequired": "Ime je obavezno"
       },
       "EmailInput": {
         "Title": "Email*",
-        "Placeholder": "jennifer@someemail.com"
+        "Placeholder": "jennifer@someemail.com",
+        "Error": "Neispravna email adresa",
+        "ErrorRequired": "Email je obavezan"
       },
       "MessageInput": {
         "Title": "Video koji imate na umu",

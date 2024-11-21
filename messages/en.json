@@ -151,11 +151,15 @@
       "Subtitle": "Have a project in mind or need more information about our services? We’d love to hear from you. * Get in touch to bring your vision to life with Yume Visuals.",
       "NameInput": {
         "Title": "Name*",
-        "Placeholder": "Jennifer"
+        "Placeholder": "Jennifer",
+        "Error": "Name is too long",
+        "ErrorRequired": "Name is required"
       },
       "EmailInput": {
         "Title": "Email*",
-        "Placeholder": "jennifer@someemail.com"
+        "Placeholder": "jennifer@someemail.com",
+        "Error": "Please enter a valid email",
+        "ErrorRequired": "Email is required"
       },
       "MessageInput": {
         "Title": "Video in mind",

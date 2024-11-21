@@ -20,9 +20,9 @@ const vonca = localFont({
 //   src: '../fonts/Vonca-Medium.woff',
 //   variable: '--font-vonca-medium',
 // });
-const helvetica = localFont({
-  src: '../fonts/Helvetica.otf',
-  variable: '--font-helvetica',
+const helveticaLight = localFont({
+  src: '../fonts/Helvetica-Light.otf',
+  variable: '--font-helvetica-light',
 });
 
 export const metadata = {
@@ -55,7 +55,7 @@ export default async function RootLayout({ children, params }) {
       </Head>
       <html lang={locale}>
         <body
-          className={`${vonca.variable} ${helvetica.variable}  font-helvetica antialiased`}>
+          className={`${vonca.variable} ${helveticaLight.variable} font-helveticaLight  antialiased`}>
           <SmoothScroll>
             <NextIntlClientProvider messages={messages}>
               <Navbar />

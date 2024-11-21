@@ -45,126 +45,115 @@
     },
     "Testimonials": {
       "Title": "Ne verujte samo nama, * verujte njima",
-      "Testimonials": [
-        {
-          "Name": "Rachel Johnson1",
-          "Position": "Menadžer Projekata u Stellar Creations",
-          "Text": "Naručila sam mnogo video snimaka i uvek su izuzetni! Toliko pažnje posvećeno detaljima i zaista shvata viziju koju imam na umu. Spremna sam da postavim sledeću narudžbinu. Nećete se pokajati ako odaberete Yume."
+      "Testimonials": {
+        "Testimonial0": {
+          "Name": "SRB Johnson1",
+          "Position": "Project Manager at Stellar Creations",
+          "Text": "I've ordered many videos and they always come out exceptional! So much attention to detail and truly gets the vision I have in mind. About to place my next order. You won't regret choosing Yume."
         },
-        {
-          "Name": "Rachel Johnson2",
-          "Position": "Menadžer Projekata u Stellar Creations",
-          "Text": "Naručila sam mnogo video snimaka i uvek su izuzetni! Toliko pažnje posvećeno detaljima i zaista shvata viziju koju imam na umu. Spremna sam da postavim sledeću narudžbinu. Nećete se pokajati ako odaberete Yume."
+        "Testimonial1": {
+          "Name": "SRB Johnson2",
+          "Position": "Project Manager at Stellar Creations",
+          "Text": "I've ordered many videos and they always come out exceptional! So much attention to detail and truly gets the vision I have in mind. About to place my next order. You won't regret choosing Yume."
         },
-        {
-          "Name": "Rachel Johnson3",
-          "Position": "Menadžer Projekata u Stellar Creations",
-          "Text": "Naručila sam mnogo video snimaka i uvek su izuzetni! Toliko pažnje posvećeno detaljima i zaista shvata viziju koju imam na umu. Spremna sam da postavim sledeću narudžbinu. Nećete se pokajati ako odaberete Yume."
+        "Testimonial2": {
+          "Name": "SRB Johnson3",
+          "Position": "Project Manager at Stellar Creations",
+          "Text": "I've ordered many videos and they always come out exceptional! So much attention to detail and truly gets the vision I have in mind. About to place my next order. You won't regret choosing Yume."
         },
-        {
-          "Name": "Rachel Johnson4",
-          "Position": "Menadžer Projekata u Stellar Creations",
-          "Text": "Naručila sam mnogo video snimaka i uvek su izuzetni! Toliko pažnje posvećeno detaljima i zaista shvata viziju koju imam na umu. Spremna sam da postavim sledeću narudžbinu. Nećete se pokajati ako odaberete Yume."
+        "Testimonial3": {
+          "Name": "SRB Johnson4",
+          "Position": "Project Manager at Stellar Creations",
+          "Text": "I've ordered many videos and they always come out exceptional! So much attention to detail and truly gets the vision I have in mind. About to place my next order. You won't regret choosing Yume."
         },
-        {
-          "Name": "Rachel Johnson5",
-          "Position": "Menadžer Projekata u Stellar Creations",
-          "Text": "Naručila sam mnogo video snimaka i uvek su izuzetni! Toliko pažnje posvećeno detaljima i zaista shvata viziju koju imam na umu. Spremna sam da postavim sledeću narudžbinu. Nećete se pokajati ako odaberete Yume."
+        "Testimonial4": {
+          "Name": "SRB Johnson5",
+          "Position": "Project Manager at Stellar Creations",
+          "Text": "I've ordered many videos and they always come out exceptional! So much attention to detail and truly gets the vision I have in mind. About to place my next order. You won't regret choosing Yume."
         }
-      ]
+      }
     },
-    "Our services": [
-      {
+    "Our services": {
+      "Service0": {
         "Title": "Videografija",
-        "Subtitle": [
-          "Kompletna produkcija",
-          "Za događaje, reklame i kreativne projekte"
-        ],
+        "Subtitle1": "Kompletna produkcija",
+        "Subtitle2": "Za događaje, reklame i kreativne projekte",
         "Price": "Od 150$",
-        "List": [
-          "Kompletna video produkcija (događaji, reklame, muzički spotovi, itd.)",
-          "Uključuje: Pre-produkcija, snimanje, post-produkcija",
-          "Prednosti: HD kvalitet, profesionalno pripovedanje, prilagodljiv stil"
-        ],
+        "List": {
+          "item1": "Kompletna video produkcija (događaji, reklame, muzički spotovi, itd.)",
+          "item2": "Uključuje: Pre-produkcija, snimanje, post-produkcija",
+          "item3": "Prednosti: HD kvalitet, profesionalno pripovedanje, prilagodljiv stil"
+        },
         "CTA": "Zatražite ponudu"
       },
-      {
+      "Service1": {
         "Title": "Video montaža",
-        "Subtitle": [
-          "Kompletna produkcija",
-          "Za događaje, reklame i kreativne projekte"
-        ],
+        "Subtitle1": "Kompletna produkcija",
+        "Subtitle2": "Za događaje, reklame i kreativne projekte",
         "Price": "Od 100$",
-        "List": [
-          "Prerada snimaka u konačni proizvod",
-          "Uključuje: Sečenje, bojenje, zvučni dizajn, specijalni efekti",
-          "Prednosti: Glatki prelazi, uglađeni vizuali, optimizovani za platforme"
-        ],
+        "List": {
+          "item1": "Prerada snimaka u konačni proizvod",
+          "item2": "Uključuje: Sečenje, bojenje, zvučni dizajn, specijalni efekti",
+          "item3": "Prednosti: Glatki prelazi, uglađeni vizuali, optimizovani za platforme"
+        },
         "CTA": "Zatražite ponudu"
       },
-      {
+      "Service2": {
         "Title": "Fotografija",
-        "Subtitle": [
-          "Kompletna produkcija",
-          "Za događaje, reklame i kreativne projekte"
-        ],
+        "Subtitle1": "Kompletna produkcija",
+        "Subtitle2": "Za događaje, reklame i kreativne projekte",
         "Price": "Od 100$",
-        "List": [
-          "Profesionalna fotografija (portreti, događaji, proizvodi, urednički snimci)",
-          "Uključuje: Fotografisanje, editovanje, visokokvalitetne završne slike",
-          "Prednosti: Oštre, živopisne slike prilagođene vašoj viziji"
-        ],
+        "List": {
+          "item1": "Profesionalna fotografija (portreti, događaji, proizvodi, urednički snimci)",
+          "item2": "Uključuje: Fotografisanje, editovanje, visokokvalitetne završne slike",
+          "item3": "Prednosti: Oštre, živopisne slike prilagođene vašoj viziji"
+        },
         "CTA": "Zatražite ponudu"
       },
-      {
+      "Service3": {
         "Title": "Snimanje dronom",
-        "Subtitle": [
-          "Kompletna produkcija",
-          "Za događaje, reklame i kreativne projekte"
-        ],
+        "Subtitle1": "Kompletna produkcija",
+        "Subtitle2": "Za događaje, reklame i kreativne projekte",
         "Price": "Od 200$",
-        "List": [
-          "Vazdušno snimanje za filmske pejzaže i jedinstvene uglove",
-          "Uključuje: Sertifikovana dron operacija, 4K snimci, post-produkcija",
-          "Prednosti: Dinamični prikazi, idealno za nekretnine, putovanja, dramatične kadrove"
-        ],
+        "List": {
+          "item1": "Vazdušno snimanje za filmske pejzaže i jedinstvene uglove",
+          "item2": "Uključuje: Sertifikovana dron operacija, 4K snimci, post-produkcija",
+          "item3": "Prednosti: Dinamični prikazi, idealno za nekretnine, putovanja, dramatične kadrove"
+        },
         "CTA": "Zatražite ponudu"
       }
-    ],
+    },
     "FAQ": {
-      "Title": "Imate pitanja? Imamo odgovore!",
-      "List": [
-        {
-          "Question": "pitanje",
-          "Answer": "odgovor"
-        },
-        {
-          "Question": "pitanje",
-          "Answer": "odgovor"
-        },
-        {
-          "Question": "pitanje",
-          "Answer": "odgovor"
-        },
-        {
-          "Question": "pitanje",
-          "Answer": "odgovor"
-        },
-        {
-          "Question": "pitanje",
-          "Answer": "odgovor"
-        }
-      ]
+      "Title": "Imate pitanja?*Imamo odgovore!",
+      "List": {
+        "Question0": "What services does Yume Visuals offer?",
+        "Answer0": "We specialize in videography, video editing, and creative storytelling for businesses and personal projects.",
+
+        "Question1": "question1",
+        "Answer1": "answer1",
+
+        "Question2": "question2",
+        "Answer2": "answer2",
+
+        "Question3": "question3",
+        "Answer3": "answer3",
+
+        "Question4": "question4",
+        "Answer4": "answer4",
+
+        "Question5": "question5",
+        "Answer5": "answer5"
+      }
     },
     "Contact": {
-      "Title": "Stvorimo nešto neverovatno",
+      "Title": "Hajde da stvorimo*nešto neverovatno",
       "Subtitle": "Imate projekat na umu ili trebate više informacija o našim uslugama? Voleli bismo da čujemo od vas. * Javite se da oživimo vašu viziju uz Yume Visuals.",
       "NameInput": {
-        "Title": "Ime",
+        "Title": "Ime*",
         "Placeholder": "Jennifer"
       },
       "EmailInput": {
-        "Title": "Email",
+        "Title": "Email*",
         "Placeholder": "jennifer@someemail.com"
       },
       "MessageInput": {

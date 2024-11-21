@@ -42,11 +42,19 @@ export default function Navbar() {
       <div
         className={` ${
           notHome
-            ? ' bg-white text-[#66564e] shadow-lg'
-            : ' bg-white bg-opacity-[0.001] backdrop-blur-md text-white'
-        } h-[70px] flex items-center justify-between xl:mx-64 md:mx-32 mx-5
-        rounded-b-3xl transition-all duration-300`}>
-        <Link href={`/`} className={`ml-2 cursor-pointer`}>
+            ? ' bg-white text-[#66564e] shadow-lg xl:mx-64 md:mx-32 mx-5 rounded-b-3xl'
+            : ' bg-white bg-opacity-[0.001] backdrop-blur-md text-white xl:px-64 md:px-32 px-5'
+        } h-[70px] flex items-center justify-between 
+         transition-all duration-300`}>
+        <Link
+          href={`/`}
+          className={`ml-2 cursor-pointer`}
+          onClick={() => {
+            lenis?.scrollTo('#hero'),
+              {
+                duration: 4,
+              };
+          }}>
           <Logo fill={notHome ? '#66564e' : '#ffffff'} />
         </Link>
 
@@ -54,19 +62,30 @@ export default function Navbar() {
           className={`${
             notHome ? '' : 'font-medium'
           } font-vonca  text-2xl flex items-center justify-evenly w-1/2`}>
-          {keys.map((key) => (
-            <Link
-              key={key}
-              href={t(`${key}.Link`)}
-              className={`${
-                notHome ? 'after:bg-[#66564e]' : 'after:bg-[#ffffff]'
-              } relative transition-all cursor-pointer
+          {keys.map((key) => {
+            const link = t(`${key}.Link`);
+            const scrollLink = link.replace('/', '');
+            return (
+              <Link
+                key={key}
+                href={link}
+                onClick={() => {
+                  lenis?.scrollTo(scrollLink),
+                    {
+                      offset: -80,
+                      duration: 4,
+                    };
+                }}
+                className={`${
+                  notHome ? 'after:bg-[#66564e]' : 'after:bg-[#ffffff]'
+                } relative transition-all cursor-pointer
               after:content-[''] after:absolute after:w-full after:h-[2px] after:left-0 
               after:bottom-[-2px] after:origin-bottom-right after:hover:origin-bottom-left 
               after:scale-x-0 after:hover:scale-x-100 after:transition-transform after:duration-300`}>
-              {t(`${key}.Text`)}
-            </Link>
-          ))}
+                {t(`${key}.Text`)}
+              </Link>
+            );
+          })}
         </div>
 
         <button

@@ -1,7 +1,7 @@
 {
   "Layout": {
     "Navbar": {
-      "Home": { "Text": "Home", "Link": "/" },
+      "Home": { "Text": "Home", "Link": "/#hero" },
       "Work": {
         "Text": "Our work",
         "Link": "/our-work"
@@ -35,136 +35,126 @@
     },
     "Photography": {
       "Title": "Photography",
-      "Subtitle": "Lorem",
+      "Subtitle": "Our video production services are designed to take your content to the next level. From viral-worthy promos that'll make heads turn to expert video editing that adds that extra oomph to your footage, we've got the skills and creativity to make it happen.",
       "CTA": "Photo gallery"
     },
     "Drone filming": {
       "Title": "Drone filming",
-      "Subtitle": "Lorem",
+      "Subtitle": "Our video production services are designed to take your content to the next level. From viral-worthy promos that'll make heads turn to expert video editing that adds that extra oomph to your footage, we've got the skills and creativity to make it happen.",
       "CTA": "Explore footage"
     },
     "Testimonials": {
       "Title": "Don’t take our word for it, * take theirs",
-      "Testimonials": [
-        {
+      "Testimonials": {
+        "Testimonial0": {
           "Name": "Rachel Johnson1",
-          "Position": "Project Manager at Stellar Creations",
-          "Text": "I've ordered many videos and they always come out exceptional! So much attention to detail and truly gets the vision I have in mind. About to place my next order. You won't regret choosing Yume."
+          "Position": "Project Manager1asd at Stellar Creations",
+          "Text": "1I've ordered many videos and they always come out exceptional! So much attention to detail and truly gets the vision I have in mind. About to place my next order. You won't regret choosing Yume."
         },
-        {
+        "Testimonial1": {
           "Name": "Rachel Johnson2",
-          "Position": "Project Manager at Stellar Creations",
-          "Text": "I've ordered many videos and they always come out exceptional! So much attention to detail and truly gets the vision I have in mind. About to place my next order. You won't regret choosing Yume."
+          "Position": "Project Manager2fzs at Stellar Creations",
+          "Text": "2I've ordered many videos and they always come out exceptional! So much attention to detail and truly gets the vision I have in mind. About to place my next order. You won't regret choosing Yume."
         },
-        {
+        "Testimonial2": {
           "Name": "Rachel Johnson3",
-          "Position": "Project Manager at Stellar Creations",
-          "Text": "I've ordered many videos and they always come out exceptional! So much attention to detail and truly gets the vision I have in mind. About to place my next order. You won't regret choosing Yume."
+          "Position": "Project Manager3avf at Stellar Creations",
+          "Text": "3I've ordered many videos and they always come out exceptional! So much attention to detail and truly gets the vision I have in mind. About to place my next order. You won't regret choosing Yume."
         },
-        {
+        "Testimonial3": {
           "Name": "Rachel Johnson4",
-          "Position": "Project Manager at Stellar Creations",
-          "Text": "I've ordered many videos and they always come out exceptional! So much attention to detail and truly gets the vision I have in mind. About to place my next order. You won't regret choosing Yume."
+          "Position": "Project Manager4ht6rtv at Stellar Creations",
+          "Text": "4I've ordered many videos and they always come out exceptional! So much attention to detail and truly gets the vision I have in mind. About to place my next order. You won't regret choosing Yume."
         },
-        {
+        "Testimonial4": {
           "Name": "Rachel Johnson5",
-          "Position": "Project Manager at Stellar Creations",
-          "Text": "I've ordered many videos and they always come out exceptional! So much attention to detail and truly gets the vision I have in mind. About to place my next order. You won't regret choosing Yume."
+          "Position": "Project Manager5asadfg at Stellar Creations",
+          "Text": "5I've ordered many videos and they always come out exceptional! So much attention to detail and truly gets the vision I have in mind. About to place my next order. You won't regret choosing Yume."
         }
-      ]
+      }
     },
-    "Our services": [
-      {
+    "Our services": {
+      "Title": "Our services",
+      "Service0": {
         "Title": "Videography",
-        "Subtitle": [
-          "Full-service production",
-          "For events, commercials, and creative projects"
-        ],
+        "Subtitle1": "Full-service production",
+        "Subtitle2": "For events, commercials, and creative projects",
         "Price": "From 150$",
-        "List": [
-          "Full-service video production (events, commercials, music videos, etc.)",
-          "Includes: Pre-production, shooting, post-production",
-          "Benefits: HD quality, professional storytelling, adaptable style"
-        ],
+        "List": {
+          "item1": "Full-service video production (events, music videos, etc.)",
+          "item2": "Includes: Pre-production, shooting, post-production",
+          "item3": "Benefits: HD quality, professional storytelling, adaptable style"
+        },
         "CTA": "Get an offer"
       },
-      {
+      "Service1": {
         "Title": "Video editing",
-        "Subtitle": [
-          "Full-service production",
-          "For events, commercials, and creative projects"
-        ],
+        "Subtitle1": "Full-service production",
+        "Subtitle2": "For events, commercials, and creative projects",
         "Price": "From 100$",
-        "List": [
-          "Refines footage into a seamless final product",
-          "Includes: Cutting, color grading, sound design, special effects",
-          "Benefits: Smooth transitions, polished visuals, platform-optimized"
-        ],
+        "List": {
+          "item1": "Refines footage into a seamless final product",
+          "item2": "Includes: Cutting, color grading, sound design, special effects",
+          "item3": "Benefits: Smooth transitions, polished visuals, platform-optimized"
+        },
         "CTA": "Get an offer"
       },
-      {
+      "Service2": {
         "Title": "Photography",
-        "Subtitle": [
-          "Full-service production",
-          "For events, commercials, and creative projects"
-        ],
+        "Subtitle1": "Full-service production",
+        "Subtitle2": "For events, commercials, and creative projects",
         "Price": "From 100$",
-        "List": [
-          "Professional photography (portraits, events, products, editorial shoots)",
-          "Includes: Full photoshoot, editing, high-quality final images",
-          "Benefits: Sharp, vibrant images tailored to your vision"
-        ],
+        "List": {
+          "item1": "Professional photography (portraits, events, products, etc.)",
+          "item2": "Includes: Full photoshoot, editing, high-quality final images",
+          "item3": "Benefits: Sharp, vibrant images tailored to your vision"
+        },
         "CTA": "Get an offer"
       },
-      {
+      "Service3": {
         "Title": "Drone filming",
-        "Subtitle": [
-          "Full-service production",
-          "For events, commercials, and creative projects"
-        ],
+        "Subtitle1": "Full-service production",
+        "Subtitle2": "For events, commercials, and creative projects",
         "Price": "From 200$",
-        "List": [
-          "Aerial videography for cinematic landscapes and unique angles",
-          "Includes: Certified drone operation, 4K footage, post-production",
-          "Benefits: Dynamic views, ideal for real estate, travel, dramatic shots"
-        ],
+        "List": {
+          "item1": "Aerial videography for cinematic landscapes and unique angles",
+          "item2": "Includes: Certified drone operation, 4K footage, post-production",
+          "item3": "Benefits: Dynamic views, ideal for real estate, travel, dramatic shots"
+        },
         "CTA": "Get an offer"
       }
-    ],
+    },
     "FAQ": {
-      "Title": "Got questions? We've got answers!",
-      "List": [
-        {
-          "Question": "question",
-          "Answer": "answer"
-        },
-        {
-          "Question": "question",
-          "Answer": "answer"
-        },
-        {
-          "Question": "question",
-          "Answer": "answer"
-        },
-        {
-          "Question": "question",
-          "Answer": "answer"
-        },
-        {
-          "Question": "question",
-          "Answer": "answer"
-        }
-      ]
+      "Title": "Got questions?*We've got answers!",
+      "List": {
+        "Question0": "What services does Yume Visuals offer?",
+        "Answer0": "We specialize in videography, video editing, and creative storytelling for businesses and personal projects.",
+
+        "Question1": "question1",
+        "Answer1": "answer1",
+
+        "Question2": "question2",
+        "Answer2": "answer2",
+
+        "Question3": "question3",
+        "Answer3": "answer3",
+
+        "Question4": "question4",
+        "Answer4": "answer4",
+
+        "Question5": "question5",
+        "Answer5": "answer5"
+      }
     },
     "Contact": {
-      "Title": "Let’s create something amazing",
+      "Title": "Let’s create*something amazing",
       "Subtitle": "Have a project in mind or need more information about our services? We’d love to hear from you. * Get in touch to bring your vision to life with Yume Visuals.",
       "NameInput": {
-        "Title": "Name",
+        "Title": "Name*",
         "Placeholder": "Jennifer"
       },
       "EmailInput": {
-        "Title": "Email",
+        "Title": "Email*",
         "Placeholder": "jennifer@someemail.com"
       },
       "MessageInput": {

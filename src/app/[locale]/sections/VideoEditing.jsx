@@ -126,9 +126,10 @@ export default function VideoEditing() {
               key={index}
               disabled={isAnimating}
               onClick={() => handleDotClick(index)}
-              className={`bg-white rounded-full cursor-pointer transition-all duration-300 ${
-                index === videoIndex ? 'w-5 h-5 ' : 'w-3 h-3 '
-              }`}
+              className={`bg-white rounded-full cursor-pointer transition-all duration-300 size-3`}
+              style={{
+                transform: index === videoIndex ? 'scale(1.4)' : 'scale(1)',
+              }}
             />
           ))}
         </div>

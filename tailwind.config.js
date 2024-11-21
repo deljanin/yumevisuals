@@ -10,7 +10,7 @@ module.exports = {
       fontFamily: {
         vonca: ['var(--font-vonca)'],
         voncaMedium: ['var(--font-vonca-medium)'],
-        helvetica: ['var(--font-helvetica)'],
+        helveticaLight: ['var(--font-helvetica-light)'],
       },
       colors: {
         background: 'var(--background)',

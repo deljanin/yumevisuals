@@ -24,3 +24,37 @@ html.lenis body {
 .lenis.lenis-smooth iframe {
   pointer-events: none;
 }
+
+@keyframes noise {
+  0%,
+  100% {
+    background-position: 0 0;
+  }
+  90% {
+    background-position: -10% 10%;
+  }
+  80% {
+    background-position: 25% 35%;
+  }
+  70% {
+    background-position: 0% 15%;
+  }
+  60% {
+    background-position: 15% 5%;
+  }
+  50% {
+    background-position: -25% 10%;
+  }
+  40% {
+    background-position: 20% 25%;
+  }
+  30% {
+    background-position: 7% -25%;
+  }
+  20% {
+    background-position: -15% 5%;
+  }
+  10% {
+    background-position: -5% -10%;
+  }
+}

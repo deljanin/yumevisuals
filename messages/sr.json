@@ -1,177 +1,171 @@
 {
   "Layout": {
-    "Navbar": [
-      { "Text": "Početna", "Link": "/" },
-      {
+    "Navbar": {
+      "Home": {
+        "Text": "Početna",
+        "Link": "/#hero"
+      },
+      "Work": {
         "Text": "Naš rad",
         "Link": "/our-work"
       },
-      {
+      "About": {
         "Text": "O nama",
         "Link": "/about"
       },
-      {
+      "Contact": {
         "Text": "Kontakt",
         "Link": "/#contact"
       }
-    ],
-    "Footer": "TODO"
+    },
+    "Footer": "U PRIPREMI"
   },
   "HomePage": {
     "Hero": {
-      "Title": "Vaša Vizija, Naše * Remek-delo",
-      "Subtitle": "Pretvaramo vaše vizije u zapanjujuće video snimke koji * će vas naterati da kažete, „Vau!“",
-      "CTA": "Kontaktirajte nas"
+      "Title": "Kadar po kadar, * pričamo vašu priču",
+      "Subtitle": "Vaše priče + naša kamera = video sadržaj koji * ostavlja utisak! ",
+      "CTA": "Kamera ide - akcija!"
     },
     "Videography": {
       "Title": "Videografija",
-      "Subtitle": "Naše usluge video produkcije su dizajnirane da podignu vaš sadržaj na viši nivo. Od promo materijala koji privlače pažnju do stručnog video editovanja koje daje dodatni efekat vašem materijalu, imamo veštine i kreativnost da to ostvarimo.",
+      "Subtitle": "Naše usluge video produkcije podižu vaš sadržaj na viši nivo. Od promotivnih videa koji privlače pažnju do profesionalne montaže koja dodaje završni sjaj, imamo veštine i kreativnost da ostvarimo vašu viziju.",
       "CTA": "Kontaktirajte nas"
     },
     "Video editing": {
       "Title": "Video montaža",
-      "Subtitle": "Naše usluge video produkcije su dizajnirane da podignu vaš sadržaj na viši nivo. Od promo materijala koji privlače pažnju do stručnog video editovanja koje daje dodatni efekat vašem materijalu, imamo veštine i kreativnost da to ostvarimo.",
+      "Subtitle": "Profesionalna montaža koja sirovi materijal pretvara u dinamičan, visokokvalitetan video. Bilo da je za društvene mreže, brendiranje ili promocije, kreiramo vizuelno privlačne priče koje osvajaju publiku. Oživimo vašu ideju zajedno!",
       "CTA": "Kontaktirajte nas"
     },
     "Photography": {
       "Title": "Fotografija",
-      "Subtitle": "Lorem",
-      "CTA": "Galerija fotografija"
+      "Subtitle": "Visokokvalitetna fotografija koja hvata suštinu vašeg brenda, proizvoda i posebnih trenutaka. Savršeno za društvene mreže, marketing i profesionalno brendiranje. Rezervišite snimanje i izdvojite se vizuelno!",
+      "CTA": "Kontaktirajte nas"
     },
     "Drone filming": {
       "Title": "Snimanje dronom",
-      "Subtitle": "Lorem",
-      "CTA": "Pogledajte snimke"
+      "Subtitle": "Pogledajte svoju priču iz potpuno nove perspektive. Bilo da je u pitanju poslovni projekat, događaj ili snimak za Vaš brend, naš dron donosi impresivan ugao. Hajde da podignemo priču u visine – javite nam se!",
+      "CTA": "Poletimo!"
     },
     "Testimonials": {
       "Title": "Ne verujte samo nama, * verujte njima",
       "Testimonials": {
         "Testimonial0": {
-          "Name": "SRB Johnson1",
-          "Position": "Project Manager at Stellar Creations",
-          "Text": "I've ordered many videos and they always come out exceptional! So much attention to detail and truly gets the vision I have in mind. About to place my next order. You won't regret choosing Yume."
+          "Name": "Chris Martin",
+          "Position": "Montaža videa za online kurs",
+          "Text": "Nevena je nadmašila moja očekivanja! 5+ zvezdica!! Zamolio sam Nevenu da montira edukativni video i rezultat je bio fantastičan. Ima izuzetan kreativni um, odličnu pažnju na detalje i sjajnu komunikaciju. Prva verzija je vec bila savršena! Toplo preporučujem i radujem se ponovnoj saradnji!"
         },
         "Testimonial1": {
-          "Name": "SRB Johnson2",
-          "Position": "Project Manager at Stellar Creations",
-          "Text": "I've ordered many videos and they always come out exceptional! So much attention to detail and truly gets the vision I have in mind. About to place my next order. You won't regret choosing Yume."
+          "Name": "Briana Beth",
+          "Position": "Montaža videa za društvene mreže",
+          "Text": "Yume Visuals je oduševio svojim montažerskim veštinama, prikazujući izuzetno pripovedanje i vizuelnu privlačnost, uz visok nivo profesionalizma. Rad sa njima bio je pravo zadovoljstvo – izuzetno brzi, intuitivni i kreativni. Preporučujem ih za svaki projekat!"
         },
         "Testimonial2": {
-          "Name": "SRB Johnson3",
-          "Position": "Project Manager at Stellar Creations",
-          "Text": "I've ordered many videos and they always come out exceptional! So much attention to detail and truly gets the vision I have in mind. About to place my next order. You won't regret choosing Yume."
-        },
-        "Testimonial3": {
-          "Name": "SRB Johnson4",
-          "Position": "Project Manager at Stellar Creations",
-          "Text": "I've ordered many videos and they always come out exceptional! So much attention to detail and truly gets the vision I have in mind. About to place my next order. You won't regret choosing Yume."
-        },
-        "Testimonial4": {
-          "Name": "SRB Johnson5",
-          "Position": "Project Manager at Stellar Creations",
-          "Text": "I've ordered many videos and they always come out exceptional! So much attention to detail and truly gets the vision I have in mind. About to place my next order. You won't regret choosing Yume."
+          "Name": "Amber Johnson",
+          "Position": "Produkt video",
+          "Text": "Nevena uvek sve odradi SAVRŠENO! Obožavam raditi sa njom!! Ovo je treći put da sarađujemo, i sigurno nije poslednji!",
+          "Testimonial3": {
+            "Name": "Chris Hartigan",
+            "Position": "Korporativna video montaža",
+            "Text": "Nevena Deljanin je PRAVI DRAGULJ u video montaži! Prevazišla je moja očekivanja svojim besprekornim osećajem za detalje, a njena brza komunikacija učinila je saradnju izuzetno lakom. Topla preporuka!"
+          },
+          "Testimonial4": {
+            "Name": "Nick Keys",
+            "Position": "Fotografija",
+            "Text": "Prava je čast raditi sa Nevenom. Ona je neverovatan vizuelni pripovedač i jedva čekam da ponovo sarađujemo. Apsolutno fantastično. Hvala ti!"
+          },
+          "Testimonial5": {
+            "Name": "Bezika Brand",
+            "Position": "Produktna videografija",
+            "Text": "Filip je izuzetan videograf! Njegova kreativnost i oštro oko za detalje dolaze do izražaja u svakom projektu. Ima jedinstvenu sposobnost da uhvati trenutke na prelep način i pretvori ih u zadivljujuće vizuelne priče."
+          }
         }
       }
     },
     "Our services": {
-      "Title": "Usluge koje pružamo",
+      "Title": "Naše usluge",
       "Service0": {
         "Title": "Videografija",
-        "Subtitle1": "Kompletna produkcija",
-        "Subtitle2": "Za događaje, reklame i kreativne projekte",
-        "Price": "Od 150$",
+        "Subtitle1": "Kompletna video produkcija prilagođena vašim potrebama",
+        "Subtitle2": "Savršeno za događaje, reklame, muzičke spotove i još mnogo toga",
+        "Price": "Od 150e",
         "List": {
-          "item1": "Kompletna video produkcija (događaji, reklame, muzički spotovi, itd.)",
-          "item2": "Uključuje: Pre-produkcija, snimanje, post-produkcija",
+          "item1": "Kompletna video produkcija (događaji, muzički spotovi, reklame itd.)",
+          "item2": "Uključuje: planiranje, snimanje i post-produkciju",
           "item3": "Prednosti: HD kvalitet, profesionalno pripovedanje, prilagodljiv stil"
         },
-        "CTA": "Zatražite ponudu"
+        "CTA": "Zatraži ponudu"
       },
       "Service1": {
         "Title": "Video montaža",
-        "Subtitle1": "Kompletna produkcija",
-        "Subtitle2": "Za događaje, reklame i kreativne projekte",
-        "Price": "Od 100$",
+        "Subtitle1": "Obrada vašeg materijala u savršen konačni proizvod",
+        "Subtitle2": "Idealno za društvene mreže, reklame i brendiranje",
+        "Price": "Od 100e",
         "List": {
-          "item1": "Prerada snimaka u konačni proizvod",
-          "item2": "Uključuje: Sečenje, bojenje, zvučni dizajn, specijalni efekti",
-          "item3": "Prednosti: Glatki prelazi, uglađeni vizuali, optimizovani za platforme"
+          "item1": "Transformacija sirovog materijala u besprekoran, kvalitetan video",
+          "item2": "Uključuje: sečenje, kolor korekciju, zvučni dizajn, specijalne efekte",
+          "item3": "Prednosti: Glatke tranzicije, vizuelna preciznost, optimizacija za platforme"
         },
-        "CTA": "Zatražite ponudu"
+        "CTA": "Zatraži ponudu"
       },
       "Service2": {
         "Title": "Fotografija",
-        "Subtitle1": "Kompletna produkcija",
-        "Subtitle2": "Za događaje, reklame i kreativne projekte",
-        "Price": "Od 100$",
+        "Subtitle1": "Hvatanje trenutaka s preciznošću i kreativnošću",
+        "Subtitle2": "Za portrete, događaje, proizvode i još mnogo toga",
+        "Price": "Od 100e",
         "List": {
-          "item1": "Profesionalna fotografija (portreti, događaji, proizvodi, urednički snimci)",
-          "item2": "Uključuje: Fotografisanje, editovanje, visokokvalitetne završne slike",
-          "item3": "Prednosti: Oštre, živopisne slike prilagođene vašoj viziji"
+          "item1": "Profesionalna fotografija (portreti, događaji, proizvodi itd.)",
+          "item2": "Uključuje: set, obradu i visokokvalitetne finalne slike",
+          "item3": "Prednosti: Slike Vašeg brenda u skladu sa Vašom vizijom"
         },
-        "CTA": "Zatražite ponudu"
-      },
-      "Service3": {
-        "Title": "Snimanje dronom",
-        "Subtitle1": "Kompletna produkcija",
-        "Subtitle2": "Za događaje, reklame i kreativne projekte",
-        "Price": "Od 200$",
-        "List": {
-          "item1": "Vazdušno snimanje za filmske pejzaže i jedinstvene uglove",
-          "item2": "Uključuje: Sertifikovana dron operacija, 4K snimci, post-produkcija",
-          "item3": "Prednosti: Dinamični prikazi, idealno za nekretnine, putovanja, dramatične kadrove"
-        },
-        "CTA": "Zatražite ponudu"
+        "CTA": "Zatraži ponudu"
       }
     },
     "FAQ": {
-      "Title": "Imate pitanja?*Imamo odgovore!",
+      "Title": "Imate pitanja? * Imamo odgovore!",
       "List": {
-        "Question0": "What services does Yume Visuals offer?",
-        "Answer0": "We specialize in videography, video editing, and creative storytelling for businesses and personal projects.",
-
-        "Question1": "question1",
-        "Answer1": "answer1",
-
-        "Question2": "question2",
-        "Answer2": "answer2",
-
-        "Question3": "question3",
-        "Answer3": "answer3",
-
-        "Question4": "question4",
-        "Answer4": "answer4",
-
-        "Question5": "question5",
-        "Answer5": "answer5"
+        "Question0": "Koje vrste videa kreirate?",
+        "Answer0": "Specijalizovani smo za sadržaj za društvene mreže, online kurseve, promotivne i produkt videe, događaje, vlogove i još mnogo toga.",
+        "Question1": "Koliko traje proces izrade videa?",
+        "Answer1": "Vreme izrade zavisi od obima projekta, ali većina videa bude gotova za 3-10 dana od snimanja do isporuke.",
+        "Question2": "Mogu li poslati svoj snimljeni materijal na montažu?",
+        "Answer2": "Naravno! Možemo montirati vaš materijal, dodati efekte i optimizovati ga za željenu platformu.",
+        "Question3": "Šta uključuje vaša videografija?",
+        "Answer3": "Naša usluga pokriva planiranje, snimanje profesionalnom opremom i montažu.",
+        "Question4": "Da li imate sertifikovane dron operatere?",
+        "Answer4": "Da, Filip je sertifikovani dron operater i prati sve zakonske propise o snimanju iz vazduha."
       }
     },
     "Contact": {
-      "Title": "Hajde da stvorimo*nešto neverovatno",
-      "Subtitle": "Imate projekat na umu ili trebate više informacija o našim uslugama? Voleli bismo da čujemo od vas. * Javite se da oživimo vašu viziju uz Yume Visuals.",
+      "Title": "Pređimo od ideje * do stvarnosti!",
+      "Subtitle": "Imate ideju za projekat ili želite više informacija o našim uslugama? Rado ćemo vam pomoći. * Javite nam se i ostvarimo vašu viziju zajedno!",
+      "CTA": "Pošaljite poruku",
       "NameInput": {
         "Title": "Ime*",
-        "Placeholder": "Jennifer",
+        "Placeholder": "Jelena",
         "Error": "Ime je predugačko",
         "ErrorRequired": "Ime je obavezno"
       },
       "EmailInput": {
         "Title": "Email*",
-        "Placeholder": "jennifer@someemail.com",
-        "Error": "Neispravna email adresa",
-        "ErrorRequired": "Email je obavezan"
+        "Placeholder": "jelena@youremail.com",
+        "Error": "Molim Vas unesite ispravan email",
+        "ErrorRequired": "Email je neophodan"
       },
       "MessageInput": {
-        "Title": "Video koji imate na umu",
-        "Placeholder": "Trebam da editujete moje svadbene snimke..."
+        "Title": "Vaša ideja",
+        "Placeholder": "Potrebno mi je snimanje za moj brend"
       },
-      "CTA": "Pošaljite poruku"
+      "CTA": "Pošalji poruku"
     }
   },
   "AboutPage": {
     "Hero": {
-      "Title": "O nama",
-      "CTA": ""
+      "Heading1": "Ko smo mi?",
+      "Description1": "Mi smo Nevena i Filip- your go-to video wizards! (Video carobnjaci zvuci bezveze na srpskom)  Bavimo se snimanjem i video montazom vec citavu vecnost, pa smo vremenom tu strast pretvorili u ✨Yume videos✨ Pa, ako ti trebaju strava klipovi za drustvene mreze, reklame ili bilo koji drugi tip videa- tu smo! ",
+      "Heading1": "Why Yume Visuals?",
+      "Description1": "Zamisli ovu scenu: Negde jos za vreme srednje skole, gledala sam jedan strava film od Kurosave koji se zove “Yume” (sto na japanskom znaci Snovi) i, ocigledno, je bio o njegovim snovima. Pa mi je palo na pamet… sto ja ne bih napravila film o svojim snovima? 🤔I upalila mi se lampica💡 sa idejom da krenem u skolu filma. I ta-daa🥁, pocelo je moje filmsko putovanje, i usput se malo izmenilo. Tako da svaki put kad procitas Yume Visuals, seti se da je sve u ozivljavanju snova (romanticno, znam)🫶 Stay tuned za kreativan sadrzaj! ",
+      "Heading1": "Čime se mi bavimo?",
+      "Description1": "Mi se bavimo kreiranjem razlicitog foto i video sadrzaja za tebe ili tvoj brend. 🎥 Da li je za drustvene mreze, website ili za neke druge svrhe- we've got you covered. 🤗 Filip takodje poseduje nerealan skil za voznju drona pa moze da snimi sve i iz pticije perspektive."
     }
   }
 }

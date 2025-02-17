@@ -1,7 +1,10 @@
 {
   "Layout": {
     "Navbar": {
-      "Home": { "Text": "Home", "Link": "/#hero" },
+      "Home": {
+        "Text": "Home",
+        "Link": "/#hero"
+      },
       "Work": {
         "Text": "Our work",
         "Link": "/our-work"
@@ -19,9 +22,9 @@
   },
   "HomePage": {
     "Hero": {
-      "Title": "Your Vision, Our * Masterpiece",
+      "Title": "Frame by frame, * we tell your story",
       "Subtitle": "We transform your visions into mind-blowing videos that * will have you saying, \"Wow!\"",
-      "CTA": "Contact us"
+      "CTA": "Let's Create!"
     },
     "Videography": {
       "Title": "Videography",
@@ -30,70 +33,75 @@
     },
     "Video editing": {
       "Title": "Video editing",
-      "Subtitle": "Our video production services are designed to take your content to the next level. From viral-worthy promos that'll make heads turn to expert video editing that adds that extra oomph to your footage, we've got the skills and creativity to make it happen.",
+      "Subtitle": "Professional video editing that transforms raw footage into engaging, high-quality content. Whether for social media, branding, or promotions, we craft visually stunning videos that captivate your audience. Let’s bring your vision to life!",
       "CTA": "Contact us"
     },
     "Photography": {
       "Title": "Photography",
-      "Subtitle": "Our video production services are designed to take your content to the next level. From viral-worthy promos that'll make heads turn to expert video editing that adds that extra oomph to your footage, we've got the skills and creativity to make it happen.",
-      "CTA": "Photo gallery"
+      "Subtitle": "High-quality photography that captures your brand, products, and moments with precision. Perfect for social media, marketing, and professional branding. Book a shoot and make your visuals stand out!",
+      "CTA": "Contact us"
     },
     "Drone filming": {
       "Title": "Drone filming",
-      "Subtitle": "Our video production services are designed to take your content to the next level. From viral-worthy promos that'll make heads turn to expert video editing that adds that extra oomph to your footage, we've got the skills and creativity to make it happen.",
-      "CTA": "Explore footage"
+      "Subtitle": "See your story from a whole new angle. Whether it’s for a business, event, or just something epic, our drone footage brings a fresh perspective. Let’s take it to the skies – reach out today!",
+      "CTA": "Let's fly"
     },
     "Testimonials": {
       "Title": "Don’t take our word for it, * take theirs",
       "Testimonials": {
         "Testimonial0": {
-          "Name": "Rachel Johnson1",
-          "Position": "Project Manager1asd at Stellar Creations",
-          "Text": "1I've ordered many videos and they always come out exceptional! So much attention to detail and truly gets the vision I have in mind. About to place my next order. You won't regret choosing Yume."
+          "Name": "Chris Martin",
+          "Position": "Video editing for an online course",
+          "Text": "Nevena exceeded my expectations! 5+ Stars!! I asked Nevena to edit an educational video. Nevena has a fantastic creative mindset, top notch attention to detail, and perfect communication. Her first draft was excellent! I highly recommend Nevena, and I looking forward to working with her again! "
         },
         "Testimonial1": {
-          "Name": "Rachel Johnson2",
-          "Position": "Project Manager2fzs at Stellar Creations",
-          "Text": "2I've ordered many videos and they always come out exceptional! So much attention to detail and truly gets the vision I have in mind. About to place my next order. You won't regret choosing Yume."
+          "Name": "Briana Beth",
+          "Position": "Video editing for social media",
+          "Text": "Yume Visuals truly IMPRESSED with their video editing skills, showcasing exceptional storytelling. Working with them was an absolute delight as they went above and beyond, responding swiftly and demonstrating a deep understanding of my vision. Highly recommend them for any project."
         },
         "Testimonial2": {
-          "Name": "Rachel Johnson3",
-          "Position": "Project Manager3avf at Stellar Creations",
-          "Text": "3I've ordered many videos and they always come out exceptional! So much attention to detail and truly gets the vision I have in mind. About to place my next order. You won't regret choosing Yume."
+          "Name": "Amber Johnson",
+          "Position": "Product video",
+          "Text": "Nevena just gets it RIGHT every single time! I love working with her!! This is my third time and I for see myself working on many projects with her in the future"
         },
         "Testimonial3": {
-          "Name": "Rachel Johnson4",
-          "Position": "Project Manager4ht6rtv at Stellar Creations",
-          "Text": "4I've ordered many videos and they always come out exceptional! So much attention to detail and truly gets the vision I have in mind. About to place my next order. You won't regret choosing Yume."
+          "Name": "Chris Hartigan",
+          "Position": "Corporate video editing",
+          "Text": "Nevena Deljanin is an ABSOLUTE GEM in video editing! She exceeded my expectations with her meticulous attention to detail, and her quick responsiveness made collaborating a breeze. Highly recommend!"
         },
         "Testimonial4": {
-          "Name": "Rachel Johnson5",
-          "Position": "Project Manager5asadfg at Stellar Creations",
-          "Text": "5I've ordered many videos and they always come out exceptional! So much attention to detail and truly gets the vision I have in mind. About to place my next order. You won't regret choosing Yume."
+          "Name": "Nick Keys",
+          "Position": "Photography",
+          "Text": "What an absolute delight working with Nevena. She is such a wonderful visual storyteller and I can't wait to work with her again. Absolutely wonderful. Thank you!"
+        },
+        "Testimonial5": {
+          "Name": "Bezika Brand",
+          "Position": "Product videography",
+          "Text": "Filip is an exceptional videographer! His creativity and keen eye for detail shine through in every project. He has a unique ability to capture moments beautifully and turn them into stunning visual stories."
         }
       }
     },
     "Our services": {
-      "Title": "Our services",
+      "Title": "Our Services",
       "Service0": {
         "Title": "Videography",
-        "Subtitle1": "Full-service production",
-        "Subtitle2": "For events, commercials, and creative projects",
-        "Price": "From 150$",
+        "Subtitle1": "Full-service video production tailored to your needs",
+        "Subtitle2": "Perfect for events, commercials, music videos, and more",
+        "Price": "From $150",
         "List": {
-          "item1": "Full-service video production (events, music videos, etc.)",
-          "item2": "Includes: Pre-production, shooting, post-production",
-          "item3": "Benefits: HD quality, professional storytelling, adaptable style"
+          "item1": "Complete video production (events, music videos, etc.)",
+          "item2": "Includes: Pre-production planning, shooting, and post-production",
+          "item3": "Benefits: 4K quality, professional storytelling, adaptable style"
         },
         "CTA": "Get an offer"
       },
       "Service1": {
-        "Title": "Video editing",
-        "Subtitle1": "Full-service production",
-        "Subtitle2": "For events, commercials, and creative projects",
-        "Price": "From 100$",
+        "Title": "Video Editing",
+        "Subtitle1": "Polishing your footage into a captivating final product",
+        "Subtitle2": "Ideal for refining content across various platforms",
+        "Price": "From $100",
         "List": {
-          "item1": "Refines footage into a seamless final product",
+          "item1": "Transform raw footage into a seamless, high-quality video",
           "item2": "Includes: Cutting, color grading, sound design, special effects",
           "item3": "Benefits: Smooth transitions, polished visuals, platform-optimized"
         },
@@ -101,25 +109,25 @@
       },
       "Service2": {
         "Title": "Photography",
-        "Subtitle1": "Full-service production",
-        "Subtitle2": "For events, commercials, and creative projects",
-        "Price": "From 100$",
+        "Subtitle1": "Capturing moments with precision and creativity",
+        "Subtitle2": "For portraits, events, products, and everything in between",
+        "Price": "From $100",
         "List": {
           "item1": "Professional photography (portraits, events, products, etc.)",
-          "item2": "Includes: Full photoshoot, editing, high-quality final images",
-          "item3": "Benefits: Sharp, vibrant images tailored to your vision"
+          "item2": "Includes: Full photoshoot, editing, and high-quality final images",
+          "item3": "Benefits: Crisp, vibrant images tailored to your vision"
         },
         "CTA": "Get an offer"
       },
       "Service3": {
-        "Title": "Drone filming",
-        "Subtitle1": "Full-service production",
-        "Subtitle2": "For events, commercials, and creative projects",
-        "Price": "From 200$",
+        "Title": "Drone Filming",
+        "Subtitle1": "Breathtaking aerial footage for a unique perspective",
+        "Subtitle2": "Perfect for real estate, travel, and cinematic shots",
+        "Price": "From $100",
         "List": {
-          "item1": "Aerial videography for cinematic landscapes and unique angles",
-          "item2": "Includes: Certified drone operation, 4K footage, post-production",
-          "item3": "Benefits: Dynamic views, ideal for real estate, travel, dramatic shots"
+          "item1": "Aerial videography for stunning landscapes and dramatic angles",
+          "item2": "Includes: Certified drone operation, 4K footage, and post-production",
+          "item3": "Benefits: Dynamic views, ideal for real estate, travel, and dramatic shots"
         },
         "CTA": "Get an offer"
       }
@@ -127,23 +135,18 @@
     "FAQ": {
       "Title": "Got questions?*We've got answers!",
       "List": {
-        "Question0": "What services does Yume Visuals offer?",
-        "Answer0": "We specialize in videography, video editing, and creative storytelling for businesses and personal projects.",
-
-        "Question1": "question1",
-        "Answer1": "answer1",
-
-        "Question2": "question2",
-        "Answer2": "answer2",
-
-        "Question3": "question3",
-        "Answer3": "answer3",
-
-        "Question4": "question4",
-        "Answer4": "answer4",
-
-        "Question5": "question5",
-        "Answer5": "answer5"
+        "Question0": "What types of videos do you create",
+        "Answer0": "We specialize in social media content, online courses, product videos, event videos, vlogs and more.",
+        "Question1": "How long does it take to complete a video project?",
+        "Answer1": "The timeline depends on the project scope, but most videos take between 3-10 days from shooting to final delivery.",
+        "Question2": "Can I provide my own footage for editing?",
+        "Answer2": "Absolutely! We can edit your raw footage, enhance it with effects, and optimize it for your platform of choice.",
+        "Question3": "What’s included in your videography service?",
+        "Answer3": "Our service covers pre-production (planning), shooting with professional equipment, and post-production editing.",
+        "Question4": "Do you have licensed drone operators?",
+        "Answer4": "Yes, Filip is fully certified and follows all legal regulations for aerial filming.",
+        "Question5": "Do you require a deposit?",
+        "Answer5": "Yes, we typically require a deposit to secure your booking, with the remainder due upon project completion."
       }
     },
     "Contact": {
@@ -170,8 +173,12 @@
   },
   "AboutPage": {
     "Hero": {
-      "Title": "About Us",
-      "CTA": ""
+      "Heading1": "Who are we?",
+      "Description1": "Nevena & Filip, your go-to video wizards! 🎥✨ We have been doing video editing and videography for what feels like, well, 100 years, so with a century's worth of editing and videography passion, we turned our love for capturing travel adventures, daily life, and everything in between into Yume Videos! 🌟 Need killer social media vids, online course magic, epic video ads or any other types of videos? You're in the right spot! Let's bring your ideas to life! 🔥",
+      "Heading1": "Why Yume Visuals?",
+      "Description1": "Picture this: I was chilling one day, some time during highschooler times, watching this epic film by Kurosawa called “Yume” ( which means dream in Japanese, FYI🤗) And it was mind-blowing, and all about his dreams obviously. So it got me thinking… why not capture my own dreams on the big screen?🤔 That’s when the lightbulb moment hit me💡, and I decided to chase my dreams at film school. And ta-da🥁, that’s how my epic cinematography journey began! So, every time you see Yume Visuals, remember it’s all about bringing dreams to life through our lenses. Stay tuned for the magic we create! ",
+      "Heading1": "What we actually do",
+      "Description1": "We specialize in creating various types of photo or video content for you or your brand. 🎥Whether it's for social media, your website, or any other purpose, we've got you covered. Filip is also equipped with special drone flying skills to capture some amazing aerial shots."
     }
   }
 }

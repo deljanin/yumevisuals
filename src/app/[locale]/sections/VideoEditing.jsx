@@ -4,6 +4,7 @@ import { Link } from '@/i18n/routing';
 import { useTranslations } from 'next-intl';
 import { useState, useEffect } from 'react';
 import Logo from '@/components/Logo';
+import { useLenis } from 'lenis/react';
 
 const videos = [
   { path: '/videos/VideoEditing/1.mp4', duration: 21 },
@@ -14,6 +15,7 @@ const videos = [
 ];
 
 export default function VideoEditing() {
+  const lenis = useLenis();
   const [videoIndex, setVideoIndex] = useState(1); // Center video index
   const [isAnimating, setIsAnimating] = useState(false); // Prevent overlapping animations
   const [touchStart, setTouchStart] = useState(0); // Track touch start position
@@ -141,7 +143,15 @@ export default function VideoEditing() {
           {t('Title')}
         </h1>
         <p className="text-[#66564E] text-lg mb-10">{t('Subtitle')}</p>
-        <Link href="/#contact">
+        <Link
+          href="/#contact"
+          onClick={() => {
+            lenis?.scrollTo('#contact'),
+              {
+                offset: -80,
+                duration: 4,
+              };
+          }}>
           <Button text={t('CTA')} />
         </Link>
       </div>

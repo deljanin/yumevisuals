@@ -5,10 +5,7 @@
         "Text": "Home",
         "Link": "/#hero"
       },
-      "Work": {
-        "Text": "Our work",
-        "Link": "/our-work"
-      },
+
       "About": {
         "Text": "About us",
         "Link": "/about"

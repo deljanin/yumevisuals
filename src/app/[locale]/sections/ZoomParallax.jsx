@@ -1,11 +1,11 @@
 'use client';
-import Picture1 from '../../../../public/scroll-images/1.jpeg';
-import Picture2 from '../../../../public/scroll-images/2.jpeg';
+import Picture1 from '../../../../public/scroll-images/1.jpg';
+import Picture2 from '../../../../public/scroll-images/2.jpg';
 import Picture3 from '../../../../public/scroll-images/3.jpg';
 import Picture4 from '../../../../public/scroll-images/4.jpg';
 import Picture5 from '../../../../public/scroll-images/5.jpg';
 import Picture6 from '../../../../public/scroll-images/6.jpg';
-import Picture7 from '../../../../public/scroll-images/7.jpeg';
+import Picture7 from '../../../../public/scroll-images/7.jpg';
 import Image from 'next/image';
 import { useScroll, useTransform, motion } from 'framer-motion';
 import { useRef } from 'react';
@@ -38,11 +38,11 @@ export default function ZoomParallax() {
     },
     {
       src: Picture4,
-      scale: scale5,
+      scale: scale6,
     },
     {
       src: Picture5,
-      scale: scale6,
+      scale: scale5,
     },
     {
       src: Picture6,
@@ -60,13 +60,14 @@ export default function ZoomParallax() {
         {pictures.map(({ src, scale }, index) => {
           const imageContainerClasses = [
             'relative flex items-center justify-center',
-            index === 0 && 'top-0 w-[25vw] h-[25vh]',
-            index === 1 && 'top-[-30vh] left-[5vw] w-[35vw] h-[30vh]',
-            index === 2 && 'top-[-10vh] left-[-25vw] w-[20vw] h-[45vh]',
-            index === 3 && 'left-[27.5vw] w-[25vw] h-[25vh]',
-            index === 4 && 'top-[27.5vh] left-[5vw] w-[20vw] h-[25vh]',
-            index === 5 && 'top-[27.5vh] left-[-22.5vw] w-[30vw] h-[25vh]',
-            index === 6 && 'top-[22.5vh] left-[25vw] w-[15vw] h-[15vh]',
+            index === 0 && 'top-0 w-[30vw] h-[35vh]',
+            index === 1 &&
+              'top-[-32.5vh] left-[-6.3vw] w-[17.5vw] h-[25vh] scale-x-[-1]',
+            index === 2 && 'top-[-5vh] left-[-24vw] w-[16vw] h-[45vh]',
+            index === 3 && 'top-[12.5vh] left-[26vw]  w-[20vw] h-[60vh]',
+            index === 4 && 'top-[32vh] left-[2.5vw] w-[25vw] h-[25vh]',
+            index === 5 && 'top-[27vh] left-[-22.5vw] w-[23vw] h-[15vh]',
+            index === 6 && 'top-[-28.6vh] left-[16vw] w-[25vw] h-[17vh]',
           ]
             .filter(Boolean)
             .join(' ');
@@ -82,7 +83,7 @@ export default function ZoomParallax() {
                   fill
                   alt="image"
                   placeholder="blur"
-                  className="object-cover"
+                  className="object-cover "
                 />
               </div>
             </motion.div>

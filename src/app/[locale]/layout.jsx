@@ -58,18 +58,19 @@ export default async function RootLayout({ children, params }) {
           className={`${vonca.variable} ${helveticaLight.variable} font-helveticaLight  antialiased`}>
           <SmoothScroll>
             <NextIntlClientProvider messages={messages}>
-              <div
-                className="fixed inset-0 pointer-events-none top-0 left-0 right-0 bottom-0 opacity-[0.075]"
-                style={{
-                  backgroundImage: 'url(/grain.png)',
-                  backgroundSize: '100px',
-                  zIndex: '100 !important',
-                  animation: `noise 3s steps(2) infinite`,
-                }}></div>
               <Navbar />
               {children}
             </NextIntlClientProvider>
           </SmoothScroll>
+          <div
+            className="fixed inset-0 pointer-events-none top-0 left-0 right-0 bottom-0 opacity-[0.075]"
+            style={{
+              backgroundImage: 'url(/grain.png)',
+              backgroundSize: '100px',
+              animation: `noise 3s steps(2) infinite`,
+              zIndex: 9999,
+              position: 'fixed',
+            }}></div>
         </body>
       </html>
     </>

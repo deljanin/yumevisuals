@@ -5,10 +5,7 @@
         "Text": "Početna",
         "Link": "/#hero"
       },
-      "Work": {
-        "Text": "Naš rad",
-        "Link": "/our-work"
-      },
+
       "About": {
         "Text": "O nama",
         "Link": "/about"
@@ -62,22 +59,22 @@
         "Testimonial2": {
           "Name": "Amber Johnson",
           "Position": "Produkt video",
-          "Text": "Nevena uvek sve odradi SAVRŠENO! Obožavam raditi sa njom!! Ovo je treći put da sarađujemo, i sigurno nije poslednji!",
-          "Testimonial3": {
-            "Name": "Chris Hartigan",
-            "Position": "Korporativna video montaža",
-            "Text": "Nevena Deljanin je PRAVI DRAGULJ u video montaži! Prevazišla je moja očekivanja svojim besprekornim osećajem za detalje, a njena brza komunikacija učinila je saradnju izuzetno lakom. Topla preporuka!"
-          },
-          "Testimonial4": {
-            "Name": "Nick Keys",
-            "Position": "Fotografija",
-            "Text": "Prava je čast raditi sa Nevenom. Ona je neverovatan vizuelni pripovedač i jedva čekam da ponovo sarađujemo. Apsolutno fantastično. Hvala ti!"
-          },
-          "Testimonial5": {
-            "Name": "Bezika Brand",
-            "Position": "Produktna videografija",
-            "Text": "Filip je izuzetan videograf! Njegova kreativnost i oštro oko za detalje dolaze do izražaja u svakom projektu. Ima jedinstvenu sposobnost da uhvati trenutke na prelep način i pretvori ih u zadivljujuće vizuelne priče."
-          }
+          "Text": "Nevena uvek sve odradi SAVRŠENO! Obožavam raditi sa njom!! Ovo je treći put da sarađujemo, i sigurno nije poslednji!"
+        },
+        "Testimonial3": {
+          "Name": "Chris Hartigan",
+          "Position": "Korporativna video montaža",
+          "Text": "Nevena Deljanin je PRAVI DRAGULJ u video montaži! Prevazišla je moja očekivanja svojim besprekornim osećajem za detalje, a njena brza komunikacija učinila je saradnju izuzetno lakom. Topla preporuka!"
+        },
+        "Testimonial4": {
+          "Name": "Nick Keys",
+          "Position": "Fotografija",
+          "Text": "Prava je čast raditi sa Nevenom. Ona je neverovatan vizuelni pripovedač i jedva čekam da ponovo sarađujemo. Apsolutno fantastično. Hvala ti!"
+        },
+        "Testimonial5": {
+          "Name": "Bezika Brand",
+          "Position": "Produktna videografija",
+          "Text": "Filip je izuzetan videograf! Njegova kreativnost i oštro oko za detalje dolaze do izražaja u svakom projektu. Ima jedinstvenu sposobnost da uhvati trenutke na prelep način i pretvori ih u zadivljujuće vizuelne priče."
         }
       }
     },
@@ -87,7 +84,7 @@
         "Title": "Videografija",
         "Subtitle1": "Kompletna video produkcija prilagođena vašim potrebama",
         "Subtitle2": "Savršeno za događaje, reklame, muzičke spotove i još mnogo toga",
-        "Price": "Od 150e",
+        "Price": "Od 150€",
         "List": {
           "item1": "Kompletna video produkcija (događaji, muzički spotovi, reklame itd.)",
           "item2": "Uključuje: planiranje, snimanje i post-produkciju",
@@ -99,7 +96,7 @@
         "Title": "Video montaža",
         "Subtitle1": "Obrada vašeg materijala u savršen konačni proizvod",
         "Subtitle2": "Idealno za društvene mreže, reklame i brendiranje",
-        "Price": "Od 100e",
+        "Price": "Od 100€",
         "List": {
           "item1": "Transformacija sirovog materijala u besprekoran, kvalitetan video",
           "item2": "Uključuje: sečenje, kolor korekciju, zvučni dizajn, specijalne efekte",
@@ -111,11 +108,23 @@
         "Title": "Fotografija",
         "Subtitle1": "Hvatanje trenutaka s preciznošću i kreativnošću",
         "Subtitle2": "Za portrete, događaje, proizvode i još mnogo toga",
-        "Price": "Od 100e",
+        "Price": "Od 100€",
         "List": {
           "item1": "Profesionalna fotografija (portreti, događaji, proizvodi itd.)",
           "item2": "Uključuje: set, obradu i visokokvalitetne finalne slike",
           "item3": "Prednosti: Slike Vašeg brenda u skladu sa Vašom vizijom"
+        },
+        "CTA": "Zatraži ponudu"
+      },
+      "Service3": {
+        "Title": "Snimanje Dronom",
+        "Subtitle1": "Zadivljujući snimci iz vazduha za jedinstvenu perspektivu",
+        "Subtitle2": "Savršeno za nekretnine, putovanja i filmske kadrove",
+        "Price": "Od 100€",
+        "List": {
+          "item1": "Vazdušna videografija za impresivne pejzaže i dramatične uglove",
+          "item2": "Uključuje: Sertifikovanog operatera drona, 4K snimke i postprodukciju",
+          "item3": "Prednosti: Dinamični kadrovi, idealni za nekretnine, putovanja i filmske scene"
         },
         "CTA": "Zatraži ponudu"
       }

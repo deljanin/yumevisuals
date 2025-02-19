@@ -5,6 +5,7 @@ import Button from '@/components/Button';
 import Image from 'next/image';
 import { useTransform, useScroll, motion } from 'framer-motion';
 import { useTranslations } from 'next-intl';
+import { useLenis } from 'lenis/react';
 
 const images = [
   '/parallax-images/1.jpg',
@@ -22,6 +23,7 @@ const images = [
 ];
 
 export default function Photography() {
+  const lenis = useLenis();
   const t = useTranslations('HomePage.Photography');
 
   const gallery = useRef(null);
@@ -59,7 +61,15 @@ export default function Photography() {
             {t('Title')}
           </h1>
           <p className="text-[#66564E] text-lg mb-10">{t('Subtitle')}</p>
-          <Link href="/#contact">
+          <Link
+            href="/#contact"
+            onClick={() => {
+              lenis?.scrollTo('#contact'),
+                {
+                  offset: -80,
+                  duration: 4,
+                };
+            }}>
             <Button text={t('CTA')} />
           </Link>
         </div>

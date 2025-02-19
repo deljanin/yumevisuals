@@ -1,8 +1,11 @@
+'use client';
+import { useLenis } from 'lenis/react';
 import { Link } from '@/i18n/routing';
 import Button from '@/components/Button';
 import { useTranslations } from 'next-intl';
 
 export default function Drone() {
+  const lenis = useLenis();
   const t = useTranslations('HomePage.Drone filming');
 
   return (
@@ -13,7 +16,15 @@ export default function Drone() {
       <p className="text-white md:text-lg mb-10 xl:w-1/3 md:w-2/3 px-5">
         {t('Subtitle')}
       </p>
-      <Link href="/#contact">
+      <Link
+        href="/#contact"
+        onClick={() => {
+          lenis?.scrollTo('#contact'),
+            {
+              offset: -80,
+              duration: 4,
+            };
+        }}>
         <Button text={t('CTA')} />
       </Link>
       <div className="absolute h-screen w-full top-0 left-0 right-0 bottom-0  -z-10">

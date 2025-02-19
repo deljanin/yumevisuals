@@ -1,9 +1,12 @@
+'use client';
 import formatLineBreak from '@/utils/formatLineBreak';
 import Button from '../../../components/Button';
 import { useTranslations } from 'next-intl';
 import Link from 'next/link';
+import { useLenis } from 'lenis/react';
 
 export default function Hero() {
+  const lenis = useLenis();
   const t = useTranslations('HomePage.Hero');
 
   return (
@@ -17,7 +20,16 @@ export default function Hero() {
         <p className="text-2xl text-center mb-10 text-white z-10 ">
           {formatLineBreak(t('Subtitle'))}
         </p>
-        <Link href="/#contact" className="z-10">
+        <Link
+          href="/#contact"
+          className="z-10"
+          onClick={() => {
+            lenis?.scrollTo('#contact'),
+              {
+                offset: -80,
+                duration: 4,
+              };
+          }}>
           <Button text={t('CTA')} className="text-xl px-6 py-3" />
         </Link>
         <div className="absolute top-0 left-0 right-0 bottom-0">

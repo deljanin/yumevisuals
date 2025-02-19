@@ -1,10 +1,15 @@
+'use client';
 import { useTranslations } from 'next-intl';
 import { Link } from '@/i18n/routing';
+import { useLenis } from 'lenis/react';
 
 export default function Services() {
+  const lenis = useLenis();
   const t = useTranslations('HomePage.Our services');
   return (
-    <div className="min-h-[125vh] relative w-full bg-[#DFD5D4] overflow-hidden">
+    <div
+      id="services"
+      className="min-h-[125vh] relative w-full bg-[#DFD5D4] overflow-hidden">
       <div className="relative z-30 xl:px-64 md:px-32 px-5 pt-16">
         <h1 className="text-white text-6xl font-vonca font-medium mb-20 text-center">
           {t('Title')}
@@ -38,7 +43,14 @@ export default function Services() {
                   <button
                     className="mt-4 rounded-3xl text-white bg-[#987776] text-lg tracking-wide px-6 py-2
                     shadow-[0px_0px_30px_-9px_rgba(0,0,0,0.25)] transition-all
-                    group-hover:scale-105  group-hover:shadow-[0px_0px_30px_-9px_rgba(0,0,0,0.5)] delay-100">
+                    group-hover:scale-105  group-hover:shadow-[0px_0px_30px_-9px_rgba(0,0,0,0.5)] delay-100"
+                    onClick={() => {
+                      lenis?.scrollTo('#contact'),
+                        {
+                          offset: -80,
+                          duration: 4,
+                        };
+                    }}>
                     {t(`Service${i}.CTA`)}
                   </button>
                 </Link>

@@ -1,8 +1,11 @@
+'use client';
 import { useTranslations } from 'next-intl';
 import Button from '../../../components/Button';
 import Link from 'next/link';
+import { useLenis } from 'lenis/react';
 
 export default function Videography() {
+  const lenis = useLenis();
   const t = useTranslations('HomePage.Videography');
 
   return (
@@ -10,7 +13,15 @@ export default function Videography() {
       <div className="relative z-30 md:w-7/12 xl:px-64 md:px-32 px-5 pt-44">
         <h1 className="text-white text-8xl font-vonca mb-3">{t('Title')}</h1>
         <p className="text-white text-lg mb-10">{t('Subtitle')}</p>
-        <Link href="/#contact">
+        <Link
+          href="/#contact"
+          onClick={() => {
+            lenis?.scrollTo('#contact'),
+              {
+                offset: -80,
+                duration: 4,
+              };
+          }}>
           <Button text={t('CTA')} />
         </Link>
       </div>

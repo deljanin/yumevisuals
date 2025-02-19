@@ -19,7 +19,7 @@ export default function Services() {
             return (
               <div
                 key={i}
-                className="px-12 py-7 min-h-[350px] group rounded-3xl shadow-[0px_0px_30px_-7px_rgba(0,0,0,0.7)]
+                className="flex flex-col px-12 py-7 min-h-[350px] group rounded-3xl shadow-[0px_0px_30px_-7px_rgba(0,0,0,0.7)]
                  hover:shadow-[0px_0px_30px_-7px_rgba(0,0,0)] hover:scale-[1.02]
                  transition-all bg-[linear-gradient(45deg,#dfd5d4_0%,white_100%)]">
                 <h2 className="text-4xl font-vonca font-medium text-[#66564E] text-center mb-6 cursor-default">
@@ -39,7 +39,7 @@ export default function Services() {
                   <li className="">{t(`Service${i}.List.item2`)}</li>
                   <li className="">{t(`Service${i}.List.item3`)}</li>
                 </ul>
-                <Link href="/#contact">
+                <Link href="/#contact" className="mt-auto">
                   <button
                     className="mt-4 rounded-3xl text-white bg-[#987776] text-lg tracking-wide px-6 py-2
                     shadow-[0px_0px_30px_-9px_rgba(0,0,0,0.25)] transition-all

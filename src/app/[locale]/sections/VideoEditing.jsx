@@ -1,17 +1,28 @@
-'use client';
-import Button from '@/components/Button';
-import { Link } from '@/i18n/routing';
-import { useTranslations } from 'next-intl';
-import { useState, useEffect } from 'react';
-import Logo from '@/components/Logo';
-import { useLenis } from 'lenis/react';
+"use client";
+import Button from "@/components/Button";
+import { Link } from "@/i18n/routing";
+import { useTranslations } from "next-intl";
+import { useState, useEffect, useMemo, useRef, createRef } from "react";
+import Logo from "@/components/Logo";
+import { useLenis } from "lenis/react";
+import { CldVideoPlayer } from "next-cloudinary";
+import { motion } from "framer-motion";
+import "next-cloudinary/dist/cld-video-player.css";
+
+// const videos = [
+//   { path: '/videos/VideoEditing/1.mp4', duration: 21 },
+//   { path: '/videos/VideoEditing/2.mp4', duration: 25 },
+//   { path: '/videos/VideoEditing/3.mp4', duration: 28 },
+//   { path: '/videos/VideoEditing/4.mp4', duration: 22 },
+//   { path: '/videos/VideoEditing/5.mp4', duration: 30 },
+// ];
 
 const videos = [
-  { path: '/videos/VideoEditing/1.mp4', duration: 21 },
-  { path: '/videos/VideoEditing/2.mp4', duration: 25 },
-  { path: '/videos/VideoEditing/3.mp4', duration: 28 },
-  { path: '/videos/VideoEditing/4.mp4', duration: 22 },
-  { path: '/videos/VideoEditing/5.mp4', duration: 30 },
+  { path: "uxx4pq9b28plaqliarnf", duration: 21 },
+  { path: "iyqflrxosrl6stb2eeo9", duration: 25 },
+  { path: "fad59agvqnztewll6rfs", duration: 28 },
+  { path: "narpas4powfglsces8fz", duration: 22 },
+  { path: "q12dqxwzdbhw05pgni3e", duration: 30 },
 ];
 
 export default function VideoEditing() {
@@ -19,16 +30,38 @@ export default function VideoEditing() {
   const [videoIndex, setVideoIndex] = useState(1); // Center video index
   const [isAnimating, setIsAnimating] = useState(false); // Prevent overlapping animations
   const [touchStart, setTouchStart] = useState(0); // Track touch start position
-  const t = useTranslations('HomePage.Video editing');
+  const container = useRef(null);
+
+  const playerRefs = useRef(videos.map(() => createRef()));
+  const t = useTranslations("HomePage.Video editing");
 
   useEffect(() => {
-    const currentVideo = videos[videoIndex];
-    const timer = setTimeout(() => {
-      handleVideoEnd();
-    }, currentVideo.duration * 1000); // Trigger after the current video's duration
+    const currentPlayer = playerRefs.current[videoIndex]?.current;
 
-    return () => clearTimeout(timer); // Cleanup on component unmount or when index changes
+    if (currentPlayer) {
+      currentPlayer.play(); // Ensure it starts playing
+    }
+  });
+
+  useEffect(() => {
+    // Ensure only the main video plays
+    playerRefs.current.forEach((ref, index) => {
+      if (ref.current) {
+        if (index === videoIndex) {
+          ref.current.play();
+        } else {
+          ref.current.pause();
+          ref.current.currentTime = 0; // Reset side videos to start
+        }
+      }
+    });
   }, [videoIndex]);
+
+  const handleVideoEnd = () => {
+    startAnimationTimeout(() => {
+      setVideoIndex((prevIndex) => (prevIndex + 1) % videos.length);
+    });
+  };
 
   const startAnimationTimeout = (callback) => {
     setIsAnimating(true);
@@ -36,13 +69,6 @@ export default function VideoEditing() {
       callback();
       setIsAnimating(false);
     }, 1000); // Animation duration (1s)
-  };
-
-  const handleVideoEnd = () => {
-    startAnimationTimeout(() => {
-      // Update video index cyclically
-      setVideoIndex((prevIndex) => (prevIndex + 1) % videos.length);
-    });
   };
 
   const handleDotClick = (index) => {
@@ -72,65 +98,87 @@ export default function VideoEditing() {
         // Swiped right
         startAnimationTimeout(() => {
           setVideoIndex(
-            (prevIndex) => (prevIndex - 1 + videos.length) % videos.length
+            (prevIndex) => (prevIndex - 1 + videos.length) % videos.length,
           );
         });
       }
     }
   };
 
+  const visibleVideos = useMemo(() => {
+    const prevIndex = (videoIndex - 1 + videos.length) % videos.length;
+    const nextIndex = (videoIndex + 1) % videos.length;
+
+    return { prevIndex, videoIndex, nextIndex };
+  }, [videoIndex]);
+
+  const getVideoClasses = (index) => {
+    if (index === visibleVideos.videoIndex) {
+      return "z-20 h-auto w-[400px] rounded-3xl shadow-[0px_0px_30px_0px_rgba(0,0,0,0.25)]"; // Main video in focus
+    }
+    if (index === visibleVideos.prevIndex) {
+      return `z-10 left-0 absolute h-auto w-[300px] rounded-3xl shadow-[0px_0px_30px_0px_rgba(0,0,0,0.25)]`;
+    }
+    if (index === visibleVideos.nextIndex) {
+      return `z-10 right-0 absolute h-auto w-[300px] rounded-3xl shadow-[0px_0px_30px_0px_rgba(0,0,0,0.25)] `;
+    }
+    return `hidden`; // Hide all other videos
+  };
+
   return (
-    <div
-      className="w-full min-h-screen bg-[#dfd5d4] xl:pr-64 md:pr-32 px-5 lg:flex-row flex flex-col-reverse items-center justify-between lg:gap-5 gap-10"
+    <motion.div
+      ref={container}
+      className="flex min-h-screen w-full flex-col-reverse items-center justify-between gap-10 bg-[#dfd5d4] px-5 md:pr-32 lg:flex-row lg:gap-5 xl:pr-64"
       onTouchStart={handleTouchStart}
-      onTouchEnd={handleTouchEnd}>
+      onTouchEnd={handleTouchEnd}
+    >
       {/* Video Section */}
-      <div className="flex flex-col items-center justify-between lg:w-[811px] w-full h-full">
-        <div className="w-full h-[711px] relative flex items-center justify-center">
+      <div className="flex h-full w-full flex-col items-center justify-between lg:w-[811px]">
+        <div className="relative flex h-[711px] w-full items-center justify-center">
           <div
-            className={`absolute w-full h-full bg-[#987776]
-             flex items-center justify-center z-30 rounded-3xl max-w-[400px] 
-             shadow-[0px_0px_30px_0px_rgba(0,0,0,0.25)]
-             opacity-0 transition-opacity duration-1000
-            ${isAnimating ? 'opacity-100' : ''}
-            `}>
+            className={`absolute z-30 flex h-full w-full max-w-[400px] items-center justify-center rounded-3xl bg-[#987776] shadow-[0px_0px_30px_0px_rgba(0,0,0,0.25)] transition-opacity duration-1000 ${isAnimating ? "opacity-100" : "opacity-0"} `}
+          >
             <Logo width={150} height={150} />
           </div>
-          <video
-            loop
-            muted
-            className={`z-10 absolute left-0 h-auto max-w-[300px] rounded-3xl shadow-[0px_0px_30px_0px_rgba(0,0,0,0.25)] transition-transform duration-1000 ${
-              isAnimating && 'translate-x-[220px]'
-            }`}
-            src={videos[(videoIndex - 1 + videos.length) % videos.length].path}
-          />
-
-          <video
-            autoPlay
-            muted
-            className={`z-20 h-auto max-w-[400px] rounded-3xl shadow-[0px_0px_30px_0px_rgba(0,0,0,0.25)] transition-transform duration-1000 `}
-            src={videos[videoIndex].path}
-          />
-
-          <video
-            loop
-            muted
-            className={`z-10 absolute right-0 h-auto max-w-[300px] rounded-3xl shadow-[0px_0px_30px_0px_rgba(0,0,0,0.25)] transition-transform duration-1000 ${
-              isAnimating && '-translate-x-[220px]'
-            }`}
-            src={videos[(videoIndex + 1) % videos.length].path}
-          />
+          <div
+            className={`absolute left-0 z-20 flex aspect-[9/16] w-[300px] items-center justify-center rounded-3xl bg-[#987776] shadow-[0px_0px_30px_0px_rgba(0,0,0,0.25)] transition-opacity duration-1000 ${isAnimating ? "opacity-100" : "opacity-0"} `}
+          >
+            <Logo width={150} height={150} />
+          </div>
+          <div
+            className={`absolute right-0 z-20 flex aspect-[9/16] w-[300px] items-center justify-center rounded-3xl bg-[#987776] shadow-[0px_0px_30px_0px_rgba(0,0,0,0.25)] transition-opacity duration-1000 ${isAnimating ? "opacity-100" : "opacity-0"} `}
+          >
+            <Logo width={150} height={150} />
+          </div>
+          {videos.map((video, i) => (
+            <div key={i} className={getVideoClasses(i)}>
+              <CldVideoPlayer
+                playerRef={playerRefs.current[i]}
+                id={i}
+                className="h-full w-full rounded-3xl"
+                src={video.path}
+                width="1080"
+                height="1920"
+                muted
+                bigPlayButton={false}
+                controls={false}
+                hideContextMenu
+                quality={90}
+                onEnded={handleVideoEnd} // Listen for video end
+              />
+            </div>
+          ))}
         </div>
         {/* Dots for Video Navigation */}
-        <div className="flex items-center justify-center gap-3 mt-10">
+        <div className="mt-10 flex items-center justify-center gap-3">
           {videos.map((_, index) => (
             <button
               key={index}
               disabled={isAnimating}
               onClick={() => handleDotClick(index)}
-              className={`bg-white rounded-full cursor-pointer transition-all duration-300 size-3`}
+              className={`size-3 cursor-pointer rounded-full bg-white transition-all duration-300`}
               style={{
-                transform: index === videoIndex ? 'scale(1.4)' : 'scale(1)',
+                transform: index === videoIndex ? "scale(1.4)" : "scale(1)",
               }}
             />
           ))}
@@ -138,23 +186,24 @@ export default function VideoEditing() {
       </div>
 
       {/* Text Content */}
-      <div className="lg:text-right md:max-w-[600px] flex flex-col lg:items-end text-center">
-        <h1 className="text-[#66564E] text-8xl font-vonca mb-3">
-          {t('Title')}
+      <div className="flex flex-col text-center md:max-w-[600px] lg:items-end lg:text-right">
+        <h1 className="mb-3 font-vonca text-8xl text-[#66564E]">
+          {t("Title")}
         </h1>
-        <p className="text-[#66564E] text-lg mb-10">{t('Subtitle')}</p>
+        <p className="mb-10 text-lg text-[#66564E]">{t("Subtitle")}</p>
         <Link
           href="/#contact"
           onClick={() => {
-            lenis?.scrollTo('#contact'),
+            lenis?.scrollTo("#contact"),
               {
                 offset: -80,
                 duration: 4,
               };
-          }}>
-          <Button text={t('CTA')} />
+          }}
+        >
+          <Button text={t("CTA")} />
         </Link>
       </div>
-    </div>
+    </motion.div>
   );
 }

@@ -5,10 +5,12 @@ import Button from "@/components/Button";
 import { useTranslations } from "next-intl";
 import { CldVideoPlayer } from "next-cloudinary";
 import "next-cloudinary/dist/cld-video-player.css";
+import { useMemo } from "react";
 
 export default function Drone() {
   const lenis = useLenis();
   const t = useTranslations("HomePage.Drone filming");
+  const videoId = useMemo(() => `Drone-${crypto.randomUUID()}`, []);
 
   return (
     <div className="relative flex h-screen w-full flex-col items-center justify-center bg-black bg-opacity-45 text-center shadow-[0px_-10px_30px_0px_rgba(0,0,0,0.40)]">
@@ -32,7 +34,6 @@ export default function Drone() {
       </Link>
       <div className="absolute bottom-0 left-0 right-0 top-0 -z-10 h-screen w-full">
         <CldVideoPlayer
-          id="Drone Footage"
           className="h-full w-full"
           src="ojr4s0bwm9u5igtcy97m"
           width="1920"

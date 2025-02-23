@@ -3,6 +3,7 @@ import formatLineBreak from "@/utils/formatLineBreak";
 import Button from "../../../components/Button";
 import { useTranslations } from "next-intl";
 import Link from "next/link";
+import { useMemo } from "react";
 import { useLenis } from "lenis/react";
 import { CldVideoPlayer } from "next-cloudinary";
 import "next-cloudinary/dist/cld-video-player.css";
@@ -11,6 +12,7 @@ export default function Hero() {
   const lenis = useLenis();
   const t = useTranslations("HomePage.Hero");
 
+  const videoId = useMemo(() => `Hero-${crypto.randomUUID()}`, []);
   return (
     <>
       <div
@@ -40,7 +42,6 @@ export default function Hero() {
           <div className="absolute bottom-0 z-20 h-[20px] w-full bg-gradient-to-b from-[rgba(0,0,0,0)] to-[#987776]"></div>
           <div className="absolute z-0 h-full w-full bg-[rgba(0,0,0,0.6)]"></div>
           <CldVideoPlayer
-            id="Hero"
             src="pcoxj19uvbv1wrdzkghb"
             className="pointer-events-none -z-10 h-full w-full"
             width="1920"
@@ -53,13 +54,6 @@ export default function Hero() {
             hideContextMenu
             quality={90}
           />
-          {/* <video
-            autoPlay
-            loop
-            muted
-            className="w-full h-full object-cover"
-            src="/videos/Hero.mp4"
-          /> */}
         </div>
       </div>
     </>

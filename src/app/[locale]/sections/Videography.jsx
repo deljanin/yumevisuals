@@ -6,10 +6,12 @@ import { useLenis } from "lenis/react";
 import { motion } from "framer-motion";
 import { CldVideoPlayer } from "next-cloudinary";
 import "next-cloudinary/dist/cld-video-player.css";
+import { useMemo } from "react";
 
 export default function Videography() {
   const lenis = useLenis();
   const t = useTranslations("HomePage.Videography");
+  const videoId = useMemo(() => `Videography-${crypto.randomUUID()}`, []);
 
   return (
     <div className="relative min-h-screen w-full overflow-hidden bg-[#987776]">
@@ -31,16 +33,8 @@ export default function Videography() {
       </div>
       <div className="absolute -top-[56.5vh] left-0 z-20 h-[100vh] w-[110%] -skew-y-[25deg] bg-[#987776] shadow-[-50px_-5px_25px_0px_rgba(0,0,0,0.3)_inset]"></div>
       <div className="absolute bottom-0 z-10 h-[5%] w-full bg-gradient-to-t from-[#dfd5d4ff] to-[#dfd5d400]"></div>
-      {/* <video
-        autoPlay
-        loop
-        muted
-        className="absolute top-0 w-full h-full object-cover">
-        <source src="/videos/Videography.mp4" type="video/mp4" />
-      </video> */}
       <div className="absolute top-0 h-full w-full object-cover">
         <CldVideoPlayer
-          id="Videography"
           src="iasvx3llxdu24kvjn1oi"
           width="1920"
           height="1080"

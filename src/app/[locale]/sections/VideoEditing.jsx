@@ -1,6 +1,6 @@
 "use client";
 import Button from "@/components/Button";
-import { Link } from "@/i18n/routing";
+import { Link, usePathname } from "@/i18n/routing";
 import { useTranslations } from "next-intl";
 import { useState, useEffect, useMemo, useRef, createRef } from "react";
 import Logo from "@/components/Logo";
@@ -8,24 +8,19 @@ import { useLenis } from "lenis/react";
 import { CldVideoPlayer } from "next-cloudinary";
 import { motion } from "framer-motion";
 import "next-cloudinary/dist/cld-video-player.css";
-
-// const videos = [
-//   { path: '/videos/VideoEditing/1.mp4', duration: 21 },
-//   { path: '/videos/VideoEditing/2.mp4', duration: 25 },
-//   { path: '/videos/VideoEditing/3.mp4', duration: 28 },
-//   { path: '/videos/VideoEditing/4.mp4', duration: 22 },
-//   { path: '/videos/VideoEditing/5.mp4', duration: 30 },
-// ];
+import { useAtom } from "jotai";
+import { currentPathAtom } from "@/utils/store";
 
 const videos = [
-  { path: "uxx4pq9b28plaqliarnf", duration: 21 },
-  { path: "iyqflrxosrl6stb2eeo9", duration: 25 },
-  { path: "fad59agvqnztewll6rfs", duration: 28 },
-  { path: "narpas4powfglsces8fz", duration: 22 },
-  { path: "q12dqxwzdbhw05pgni3e", duration: 30 },
+  { path: "uxx4pq9b28plaqliarnf" },
+  { path: "iyqflrxosrl6stb2eeo9" },
+  { path: "fad59agvqnztewll6rfs" },
+  { path: "narpas4powfglsces8fz" },
+  { path: "q12dqxwzdbhw05pgni3e" },
 ];
 
 export default function VideoEditing() {
+  const [currentPath] = useAtom(currentPathAtom);
   const lenis = useLenis();
   const [videoIndex, setVideoIndex] = useState(0); // Center video index
   const [isAnimating, setIsAnimating] = useState(false); // Prevent overlapping animations
@@ -35,13 +30,23 @@ export default function VideoEditing() {
   const playerRefs = useRef(videos.map(() => createRef()));
   const t = useTranslations("HomePage.Video editing");
 
+  // Ensure it starts playing on first load
   useEffect(() => {
     const currentPlayer = playerRefs.current[videoIndex]?.current;
 
     if (currentPlayer) {
-      currentPlayer.play(); // Ensure it starts playing
+      currentPlayer.play();
     }
   });
+
+  // Ensure it starts playing on every page change
+  useEffect(() => {
+    const currentPlayer = playerRefs.current[videoIndex]?.current;
+
+    if (currentPlayer) {
+      currentPlayer.play();
+    }
+  }, [currentPath]);
 
   useEffect(() => {
     // Ensure only the main video plays
@@ -167,7 +172,6 @@ export default function VideoEditing() {
             <div key={i} className={getVideoClasses(i)}>
               <CldVideoPlayer
                 playerRef={playerRefs.current[i]}
-                id={i}
                 className="h-full w-full rounded-3xl"
                 src={video.path}
                 width="1080"

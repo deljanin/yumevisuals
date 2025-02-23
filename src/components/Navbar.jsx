@@ -2,18 +2,30 @@
 import { Link } from "@/i18n/routing";
 import { useRouter } from "next/navigation";
 import { usePathname } from "@/i18n/routing";
-import { useTransition } from "react";
+import { useEffect, useTransition } from "react";
 import { useLocale, useTranslations, useMessages } from "next-intl";
 import { useLenis } from "lenis/react";
 import Logo from "@/components/Logo";
 import Globe from "@/components/Globe";
+import { useAtom } from "jotai";
+import { currentPathAtom } from "@/utils/store";
 
 export default function Navbar() {
   const localeActive = useLocale();
   const router = useRouter();
   const [isPending, startTransition] = useTransition();
   const path = usePathname();
+  const [, setCurrentPath] = useAtom(currentPathAtom);
   const lenis = useLenis();
+  const t = useTranslations("Layout.Navbar");
+  const messages = useMessages();
+  const keys = Object.keys(messages.Layout.Navbar);
+  const pathname = usePathname();
+
+  useEffect(() => {
+    // Update the path atom whenever the route changes
+    setCurrentPath(pathname);
+  }, [pathname, setCurrentPath]);
 
   function changeLanguage() {
     let nextLocale;
@@ -27,10 +39,6 @@ export default function Navbar() {
       router.replace(`/${nextLocale}${path.trimStart(3)}`);
     });
   }
-
-  const t = useTranslations("Layout.Navbar");
-  const messages = useMessages();
-  const keys = Object.keys(messages.Layout.Navbar);
 
   return (
     <div className={`sticky left-0 right-0 top-0 z-50 h-0`}>

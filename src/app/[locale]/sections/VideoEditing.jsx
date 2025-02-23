@@ -27,7 +27,7 @@ const videos = [
 
 export default function VideoEditing() {
   const lenis = useLenis();
-  const [videoIndex, setVideoIndex] = useState(1); // Center video index
+  const [videoIndex, setVideoIndex] = useState(0); // Center video index
   const [isAnimating, setIsAnimating] = useState(false); // Prevent overlapping animations
   const [touchStart, setTouchStart] = useState(0); // Track touch start position
   const container = useRef(null);
@@ -141,14 +141,27 @@ export default function VideoEditing() {
             <Logo width={150} height={150} />
           </div>
           <div
-            className={`absolute left-0 z-20 flex aspect-[9/16] w-[300px] items-center justify-center rounded-3xl bg-[#987776] shadow-[0px_0px_30px_0px_rgba(0,0,0,0.25)] transition-opacity duration-1000 ${isAnimating ? "opacity-100" : "opacity-0"} `}
+            className={`absolute left-0 z-20 flex aspect-[9/16] w-[300px] cursor-pointer items-center justify-center rounded-3xl bg-[#987776] shadow-[0px_0px_30px_0px_rgba(0,0,0,0.25)] transition-opacity duration-1000 ${isAnimating ? "opacity-100" : "opacity-0"} `}
+            onClick={() => {
+              startAnimationTimeout(() => {
+                setVideoIndex(
+                  (prevIndex) =>
+                    (prevIndex - 1 + videos.length) % videos.length,
+                );
+              });
+            }}
           >
-            <Logo width={150} height={150} />
+            {/* <Logo width={150} height={150} /> */}
           </div>
           <div
-            className={`absolute right-0 z-20 flex aspect-[9/16] w-[300px] items-center justify-center rounded-3xl bg-[#987776] shadow-[0px_0px_30px_0px_rgba(0,0,0,0.25)] transition-opacity duration-1000 ${isAnimating ? "opacity-100" : "opacity-0"} `}
+            className={`absolute right-0 z-20 flex aspect-[9/16] w-[300px] cursor-pointer items-center justify-center rounded-3xl bg-[#987776] shadow-[0px_0px_30px_0px_rgba(0,0,0,0.25)] transition-opacity duration-1000 ${isAnimating ? "opacity-100" : "opacity-0"} `}
+            onClick={() => {
+              startAnimationTimeout(() => {
+                setVideoIndex((prevIndex) => (prevIndex + 1) % videos.length);
+              });
+            }}
           >
-            <Logo width={150} height={150} />
+            {/* <Logo width={150} height={150} /> */}
           </div>
           {videos.map((video, i) => (
             <div key={i} className={getVideoClasses(i)}>

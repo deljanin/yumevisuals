@@ -4,6 +4,9 @@
 
 @layer components {
 }
+body {
+  cursor: wait;
+}
 html.lenis,
 html.lenis body {
   height: auto;

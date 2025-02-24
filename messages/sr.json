@@ -15,7 +15,39 @@
         "Link": "/#contact"
       }
     },
-    "Footer": "U PRIPREMI"
+    "Footer": {
+      "Heading": "Yume Vizuali",
+      "Group1": {
+        "Title": "Usluge",
+        "Links": {
+          "Link1": { "Text": "Videografija", "Link": "/#videography" },
+          "Link2": { "Text": "Video editovanje", "Link": "/#videoEditing" },
+          "Link3": { "Text": "Fotografija", "Link": "/#photography" },
+          "Link4": { "Text": "Snimanje dronom", "Link": "/#drone" }
+        }
+      },
+      "Group2": {
+        "Title": "Društvene mreže",
+        "Links": {
+          "Text1": "Instagram",
+          "Link1": "https://www.instagram.com/yume_visuals/"
+        }
+      },
+      "Group3": {
+        "Title": "Kontakt",
+        "Text1": "contact@yumevisuals.com",
+        "Link1": "mailto:contact@yumevisuals.com"
+      },
+      "Group4": {
+        "Title": "Ostalo",
+        "Links": {
+          "Text1": "Politika Privatnosti",
+          "Link1": "/privacy",
+          "Text2": "©2024 Yume Vizuali. *Sva prava zadražana",
+          "Link2": ""
+        }
+      }
+    }
   },
   "HomePage": {
     "Hero": {

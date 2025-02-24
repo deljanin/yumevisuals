@@ -15,7 +15,39 @@
         "Link": "/#contact"
       }
     },
-    "Footer": "TODO"
+    "Footer": {
+      "Heading": "Yume Visuals",
+      "Group1": {
+        "Title": "Services",
+        "Links": {
+          "Link1": { "Text": "Videography", "Link": "/#videography" },
+          "Link2": { "Text": "Video editing", "Link": "/#videoEditing" },
+          "Link3": { "Text": "Photography", "Link": "/#photography" },
+          "Link4": { "Text": "Drone filming", "Link": "/#drone" }
+        }
+      },
+      "Group2": {
+        "Title": "Socials",
+        "Links": {
+          "Text1": "Instagram",
+          "Link1": "https://www.instagram.com/yume_visuals/"
+        }
+      },
+      "Group3": {
+        "Title": "Contact",
+        "Text1": "contact@yumevisuals.com",
+        "Link1": "mailto:contact@yumevisuals.com"
+      },
+      "Group4": {
+        "Title": "Other",
+        "Links": {
+          "Text1": "Privacy Policy",
+          "Link1": "/privacy",
+          "Text2": "©2024 Yume Visuals. *All Rights Reserved",
+          "Link2": ""
+        }
+      }
+    }
   },
   "HomePage": {
     "Hero": {

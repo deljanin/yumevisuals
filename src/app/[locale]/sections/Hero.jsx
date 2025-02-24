@@ -5,8 +5,8 @@ import { useTranslations } from "next-intl";
 import Link from "next/link";
 import { useMemo } from "react";
 import { useLenis } from "lenis/react";
-import { CldVideoPlayer } from "next-cloudinary";
-import "next-cloudinary/dist/cld-video-player.css";
+import BackgroundVideo from "next-video/background-video";
+import HeroVideo from "/videos/Hero.mp4";
 
 export default function Hero() {
   const lenis = useLenis();
@@ -19,15 +19,15 @@ export default function Hero() {
         id="hero"
         className="relative flex min-h-screen flex-col items-center justify-center gap-3"
       >
-        <h1 className="z-10 text-center font-vonca text-8xl text-white">
+        <h1 className="z-20 text-center font-vonca text-8xl text-white">
           {formatLineBreak(t("Title"))}
         </h1>
-        <p className="z-10 mb-10 text-center text-2xl text-white">
+        <p className="z-20 mb-10 text-center text-2xl text-white">
           {formatLineBreak(t("Subtitle"))}
         </p>
         <Link
           href="/#contact"
-          className="z-10"
+          className="z-20"
           onClick={() => {
             lenis?.scrollTo("#contact"),
               {
@@ -40,8 +40,8 @@ export default function Hero() {
         </Link>
         <div className="absolute bottom-0 left-0 right-0 top-0">
           <div className="absolute bottom-0 z-20 h-[20px] w-full bg-gradient-to-b from-[rgba(0,0,0,0)] to-[#987776]"></div>
-          <div className="absolute z-0 h-full w-full bg-[rgba(0,0,0,0.6)]"></div>
-          <CldVideoPlayer
+          <div className="absolute z-10 h-full w-full bg-[rgba(0,0,0,0.6)]"></div>
+          {/* <CldVideoPlayer
             src="pcoxj19uvbv1wrdzkghb"
             className="pointer-events-none -z-10 h-full w-full"
             width="1920"
@@ -53,6 +53,13 @@ export default function Hero() {
             controls={false}
             hideContextMenu
             quality={90}
+          /> */}
+
+          <BackgroundVideo
+            src={HeroVideo}
+            autoPlay
+            loop
+            className="z-0 h-full w-full"
           />
         </div>
       </div>

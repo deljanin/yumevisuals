@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev --turbopack",
+    "dev": "next dev & npx next-video sync -w",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
@@ -15,10 +15,12 @@
     "jotai": "^2.10.2",
     "lenis": "^1.1.16",
     "next": "15.0.2",
-    "next-cloudinary": "^6.16.0",
     "next-intl": "^3.25.0",
+    "next-transition-router": "^0.2.7",
+    "next-video": "^2.1.0",
     "react": "19.0.0-rc-02c0e824-20241028",
     "react-dom": "19.0.0-rc-02c0e824-20241028",
+    "react-player": "^2.16.0",
     "yup": "^1.4.0"
   },
   "devDependencies": {

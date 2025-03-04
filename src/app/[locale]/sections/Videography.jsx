@@ -12,31 +12,36 @@ export default function Videography() {
   const t = useTranslations("HomePage.Videography");
 
   return (
-    <div
+    <section
       id="videography"
       className="relative min-h-screen w-full overflow-hidden bg-[#987776]"
     >
-      <div className="relative z-30 px-5 pt-44 md:w-7/12 md:px-32 xl:px-64">
-        <motion.h1
+      <div className="relative z-30 px-5 pt-10 sm:w-2/3 sm:pt-16 md:w-3/4 md:px-32 lg:w-9/12 xl:px-64 xl:pt-32 2xl:w-7/12 2xl:pt-44">
+        {/* filter: "blur(50px)",
+filter: "blur(0px)", */}
+        <motion.h2
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.4, delay: 0.5 }}
-          className="mb-3 font-vonca text-8xl text-white"
+          viewport={{ once: true }}
+          transition={{ duration: 0.4, delay: 0.3 }}
+          className="mb-3 font-vonca text-[2.7rem] leading-none text-white sm:text-5xl md:text-6xl xl:text-7xl 2xl:text-8xl"
         >
           {t("Title")}
-        </motion.h1>
+        </motion.h2>
         <motion.p
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.4, delay: 0.5 }}
-          className="mb-10 text-lg text-white"
+          viewport={{ once: true }}
+          transition={{ duration: 0.4, delay: 0.3 }}
+          className="mb-10 text-white md:text-lg"
         >
           {t("Subtitle")}
         </motion.p>
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.4, delay: 0.5 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.4, delay: 0.3 }}
         >
           <Link
             href="/#contact"
@@ -68,8 +73,17 @@ export default function Videography() {
           hideContextMenu
           quality={90}
         /> */}
-        <BackgroundVideo src={VideographyVideo} autoPlay loop />
+        {/* <BackgroundVideo src={VideographyVideo} autoPlay loop />
+         */}
+        <video
+          autoPlay
+          loop
+          muted
+          className="absolute top-0 h-full w-full object-cover"
+        >
+          <source src="/videos/Videography.mp4" type="video/mp4" />
+        </video>
       </div>
-    </div>
+    </section>
   );
 }

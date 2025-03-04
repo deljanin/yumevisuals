@@ -44,7 +44,9 @@
           "Text1": "Politika Privatnosti",
           "Link1": "/privacy",
           "Text2": "©2024 Yume Vizuali. *Sva prava zadražana",
-          "Link2": ""
+          "Link2": "",
+          "Text3": "Vebsajt napravio vanu.software",
+          "Link3": "https://vanu.software"
         }
       }
     }
@@ -203,10 +205,10 @@
     "Hero": {
       "Heading1": "Ko smo mi?",
       "Description1": "Mi smo Nevena i Filip- your go-to video wizards! (Video carobnjaci zvuci bezveze na srpskom)  Bavimo se snimanjem i video montazom vec citavu vecnost, pa smo vremenom tu strast pretvorili u ✨Yume videos✨ Pa, ako ti trebaju strava klipovi za drustvene mreze, reklame ili bilo koji drugi tip videa- tu smo! ",
-      "Heading1": "Why Yume Visuals?",
-      "Description1": "Zamisli ovu scenu: Negde jos za vreme srednje skole, gledala sam jedan strava film od Kurosave koji se zove “Yume” (sto na japanskom znaci Snovi) i, ocigledno, je bio o njegovim snovima. Pa mi je palo na pamet… sto ja ne bih napravila film o svojim snovima? 🤔I upalila mi se lampica💡 sa idejom da krenem u skolu filma. I ta-daa🥁, pocelo je moje filmsko putovanje, i usput se malo izmenilo. Tako da svaki put kad procitas Yume Visuals, seti se da je sve u ozivljavanju snova (romanticno, znam)🫶 Stay tuned za kreativan sadrzaj! ",
-      "Heading1": "Čime se mi bavimo?",
-      "Description1": "Mi se bavimo kreiranjem razlicitog foto i video sadrzaja za tebe ili tvoj brend. 🎥 Da li je za drustvene mreze, website ili za neke druge svrhe- we've got you covered. 🤗 Filip takodje poseduje nerealan skil za voznju drona pa moze da snimi sve i iz pticije perspektive."
+      "Heading2": "Zašto se zovemo Yume Vizuali?",
+      "Description2": "Zamisli ovu scenu: Negde jos za vreme srednje skole, gledala sam jedan strava film od Kurosave koji se zove “Yume” (sto na japanskom znaci Snovi) i, ocigledno, je bio o njegovim snovima. Pa mi je palo na pamet… sto ja ne bih napravila film o svojim snovima? 🤔I upalila mi se lampica💡 sa idejom da krenem u skolu filma. I ta-daa🥁, pocelo je moje filmsko putovanje, i usput se malo izmenilo. Tako da svaki put kad procitas Yume Visuals, seti se da je sve u ozivljavanju snova (romanticno, znam)🫶 Stay tuned za kreativan sadrzaj! ",
+      "Heading3": "Čime se mi bavimo?",
+      "Description3": "Mi se bavimo kreiranjem razlicitog foto i video sadrzaja za tebe ili tvoj brend. 🎥 Da li je za drustvene mreze, website ili za neke druge svrhe- we've got you covered. 🤗 Filip takodje poseduje nerealan skil za voznju drona pa moze da snimi sve i iz pticije perspektive."
     }
   }
 }

@@ -14,7 +14,7 @@
     "framer-motion": "^11.11.17",
     "jotai": "^2.10.2",
     "lenis": "^1.1.16",
-    "next": "15.0.2",
+    "next": "15.2.0-canary.76",
     "next-intl": "^3.25.0",
     "next-transition-router": "^0.2.7",
     "next-video": "^2.1.0",

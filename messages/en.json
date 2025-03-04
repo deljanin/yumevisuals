@@ -44,7 +44,9 @@
           "Text1": "Privacy Policy",
           "Link1": "/privacy",
           "Text2": "©2024 Yume Visuals. *All Rights Reserved",
-          "Link2": ""
+          "Link2": "",
+          "Text3": "Website by vanu.software",
+          "Link3": "https://vanu.software"
         }
       }
     }
@@ -164,7 +166,7 @@
     "FAQ": {
       "Title": "Got questions?*We've got answers!",
       "List": {
-        "Question0": "What types of videos do you create",
+        "Question0": "What types of videos do you create?",
         "Answer0": "We specialize in social media content, online courses, product videos, event videos, vlogs and more.",
         "Question1": "How long does it take to complete a video project?",
         "Answer1": "The timeline depends on the project scope, but most videos take between 3-10 days from shooting to final delivery.",
@@ -179,7 +181,7 @@
       }
     },
     "Contact": {
-      "Title": "Let’s create*something amazing",
+      "Title": "Let’s create *something amazing",
       "Subtitle": "Have a project in mind or need more information about our services? We’d love to hear from you. * Get in touch to bring your vision to life with Yume Visuals.",
       "NameInput": {
         "Title": "Name*",
@@ -204,10 +206,10 @@
     "Hero": {
       "Heading1": "Who are we?",
       "Description1": "Nevena & Filip, your go-to video wizards! 🎥✨ We have been doing video editing and videography for what feels like, well, 100 years, so with a century's worth of editing and videography passion, we turned our love for capturing travel adventures, daily life, and everything in between into Yume Videos! 🌟 Need killer social media vids, online course magic, epic video ads or any other types of videos? You're in the right spot! Let's bring your ideas to life! 🔥",
-      "Heading1": "Why Yume Visuals?",
-      "Description1": "Picture this: I was chilling one day, some time during highschooler times, watching this epic film by Kurosawa called “Yume” ( which means dream in Japanese, FYI🤗) And it was mind-blowing, and all about his dreams obviously. So it got me thinking… why not capture my own dreams on the big screen?🤔 That’s when the lightbulb moment hit me💡, and I decided to chase my dreams at film school. And ta-da🥁, that’s how my epic cinematography journey began! So, every time you see Yume Visuals, remember it’s all about bringing dreams to life through our lenses. Stay tuned for the magic we create! ",
-      "Heading1": "What we actually do",
-      "Description1": "We specialize in creating various types of photo or video content for you or your brand. 🎥Whether it's for social media, your website, or any other purpose, we've got you covered. Filip is also equipped with special drone flying skills to capture some amazing aerial shots."
+      "Heading2": "Why Yume Visuals?",
+      "Description2": "Picture this: I was chilling one day, some time during highschooler times, watching this epic film by Kurosawa called “Yume” ( which means dream in Japanese, FYI🤗) And it was mind-blowing, and all about his dreams obviously. So it got me thinking… why not capture my own dreams on the big screen?🤔 That’s when the lightbulb moment hit me💡, and I decided to chase my dreams at film school. And ta-da🥁, that’s how my epic cinematography journey began! So, every time you see Yume Visuals, remember it’s all about bringing dreams to life through our lenses. Stay tuned for the magic we create! ",
+      "Heading3": "What we actually do",
+      "Description3": "We specialize in creating various types of photo or video content for you or your brand. 🎥Whether it's for social media, your website, or any other purpose, we've got you covered. Filip is also equipped with special drone flying skills to capture some amazing aerial shots."
     }
   }
 }

@@ -1,13 +1,17 @@
 "use client";
 import Button from "@/components/Button";
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { useTranslations } from "next-intl";
 import formatLineBreak from "@/utils/formatLineBreak";
 import { Formik, Field, Form, ErrorMessage } from "formik";
 import * as yup from "yup";
+import { useInView, animate, motion } from "framer-motion";
 
 export default function Contact() {
   const t = useTranslations("HomePage.Contact");
+  const [disabled, setDisabled] = useState(false);
+  const container = useRef(null);
+  const isInView = useInView(container, { once: true, amount: 0.55 });
 
   const yupSchema = yup.object().shape({
     name: yup
@@ -23,6 +27,7 @@ export default function Contact() {
       ),
   });
   const onSubmit = async (values, actions) => {
+    setDisabled(true);
     await fetch("/api/email", {
       method: "POST",
       headers: {
@@ -30,21 +35,58 @@ export default function Contact() {
       },
       body: JSON.stringify(values),
     }).finally(() => {
+      setDisabled(false);
       actions.resetForm();
     });
   };
 
+  useEffect(() => {
+    if (isInView) {
+      animate("#title", { opacity: 1, y: 0 }, { duration: 0.4, delay: 0.1 });
+      animate("#subtitle", { opacity: 1, y: 0 }, { duration: 0.4, delay: 0.3 });
+      animate(
+        "#nameInput",
+        { opacity: 1, y: 0 },
+        { duration: 0.4, delay: 0.6 },
+      );
+      animate(
+        "#emailInput",
+        { opacity: 1, y: 0 },
+        { duration: 0.4, delay: 0.8 },
+      );
+      animate(
+        "#messageInput",
+        { opacity: 1, y: 0 },
+        { duration: 0.4, delay: 1 },
+      );
+      animate("#submit", { opacity: 1, y: 0 }, { duration: 0.4, delay: 1.2 });
+    }
+  }, [isInView]);
+
   return (
-    <div
+    <section
       id="contact"
-      className="relative z-20 flex min-h-screen w-full items-center justify-center bg-[linear-gradient(251deg,#987776_0%,#66564E_99.97%)] px-5 shadow-[0px_0px_74px_-17px_rgba(0,0,0,0.8)] md:px-32 xl:px-64"
+      className="relative z-20 flex min-h-screen w-full items-center justify-center bg-[linear-gradient(251deg,#987776_0%,#66564E_99.97%)] px-5 py-20 shadow-[0px_0px_74px_-17px_rgba(0,0,0,0.8)] md:px-32 xl:px-64"
     >
-      <div className="bg-[rgba(255, 255, 255, 0.15)] flex h-full w-full flex-col justify-normal gap-24 rounded-3xl p-16 text-white shadow-[0px_0px_210px_0px_rgba(0,0,0,0.50)] md:flex-row md:justify-between">
-        <div className="flex flex-col justify-center gap-6">
-          <h1 className="font-vonca text-6xl font-medium">
+      <div
+        ref={container}
+        className="bg-[rgba(255, 255, 255, 0.15)] flex h-full w-full flex-col justify-normal gap-5 rounded-3xl p-6 text-white shadow-[0px_0px_210px_0px_rgba(0,0,0,0.50)] md:justify-between lg:flex-row lg:p-16 2xl:gap-24"
+      >
+        <div className="flex w-full flex-col justify-center gap-6 lg:w-2/3">
+          <motion.h2
+            initial={{ opacity: 0, y: 50 }}
+            id="title"
+            className="font-vonca text-[2.7rem] font-medium leading-none sm:text-5xl md:text-6xl"
+          >
             {formatLineBreak(t("Title"))}
-          </h1>
-          <p className="text-lg">{formatLineBreak(t("Subtitle"))}</p>
+          </motion.h2>
+          <motion.p
+            initial={{ opacity: 0, y: 50 }}
+            id="subtitle"
+            className="text-lg"
+          >
+            {formatLineBreak(t("Subtitle"))}
+          </motion.p>
         </div>
         <Formik
           initialValues={{
@@ -55,9 +97,13 @@ export default function Contact() {
           validationSchema={yupSchema}
           onSubmit={onSubmit}
         >
-          <Form className="flex w-1/2 flex-col gap-1">
+          <Form className="flex w-full flex-col gap-1 lg:w-1/2">
             <Field type="text" name="extra" className="hidden" />
-            <div className="mb-3">
+            <motion.div
+              initial={{ opacity: 0, y: 50 }}
+              id="nameInput"
+              className="mb-3"
+            >
               <label htmlFor="name" className="">
                 {t("NameInput.Title")}
               </label>
@@ -73,8 +119,12 @@ export default function Contact() {
                 component="div"
                 className="mt-1 pl-4 text-red-800"
               />
-            </div>
-            <div className="mb-3">
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0, y: 50 }}
+              id="emailInput"
+              className="mb-3"
+            >
               <label htmlFor="email" className="">
                 {t("EmailInput.Title")}
               </label>
@@ -90,8 +140,12 @@ export default function Contact() {
                 component="div"
                 className="mt-1 pl-4 text-red-800"
               />
-            </div>
-            <div className="mb-3">
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0, y: 50 }}
+              id="messageInput"
+              className="mb-3"
+            >
               <label htmlFor="message" className="">
                 {t("MessageInput.Title")}
               </label>
@@ -104,11 +158,17 @@ export default function Contact() {
                 placeholder={t("MessageInput.Placeholder")}
                 className="w-full rounded-2xl bg-[#DFD5D4] p-4 text-[#66564E] placeholder-[rgba(102,86,78,0.75)] caret-black outline-none"
               />
-            </div>
-            <Button text={t("CTA")} className={"max-w-[180px] px-3 py-2"} />
+            </motion.div>
+            <motion.div initial={{ opacity: 0, y: 50 }} id="submit">
+              <Button
+                text={t("CTA")}
+                className={"max-w-[180px] px-3 py-2"}
+                disabled={disabled}
+              />
+            </motion.div>
           </Form>
         </Formik>
       </div>
-    </div>
+    </section>
   );
 }

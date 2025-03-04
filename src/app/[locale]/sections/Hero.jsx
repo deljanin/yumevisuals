@@ -3,26 +3,26 @@ import formatLineBreak from "@/utils/formatLineBreak";
 import Button from "../../../components/Button";
 import { useTranslations } from "next-intl";
 import Link from "next/link";
-import { useMemo } from "react";
 import { useLenis } from "lenis/react";
 import BackgroundVideo from "next-video/background-video";
 import HeroVideo from "/videos/Hero.mp4";
+import AnimateComponent from "@/components/AnimateComponent";
 
 export default function Hero() {
   const lenis = useLenis();
   const t = useTranslations("HomePage.Hero");
 
-  const videoId = useMemo(() => `Hero-${crypto.randomUUID()}`, []);
   return (
     <>
-      <div
+      <section
         id="hero"
-        className="relative flex min-h-screen flex-col items-center justify-center gap-3"
+        className="relative flex min-h-screen flex-col items-center justify-center gap-3 px-5"
       >
-        <h1 className="z-20 text-center font-vonca text-8xl text-white">
+        <h1 className="z-20 text-center font-vonca text-[2.7rem] leading-none text-white sm:text-5xl md:text-6xl xl:text-7xl 2xl:text-8xl">
           {formatLineBreak(t("Title"))}
         </h1>
-        <p className="z-20 mb-10 text-center text-2xl text-white">
+
+        <p className="z-20 mb-5 text-center text-white md:mb-10 md:text-2xl">
           {formatLineBreak(t("Subtitle"))}
         </p>
         <Link
@@ -36,7 +36,10 @@ export default function Hero() {
               };
           }}
         >
-          <Button text={t("CTA")} className="px-6 py-3 text-xl" />
+          <Button
+            text={t("CTA")}
+            className="px-3 py-1.5 md:px-6 md:py-3 md:text-xl"
+          />
         </Link>
         <div className="absolute bottom-0 left-0 right-0 top-0">
           <div className="absolute bottom-0 z-20 h-[20px] w-full bg-gradient-to-b from-[rgba(0,0,0,0)] to-[#987776]"></div>
@@ -55,14 +58,21 @@ export default function Hero() {
             quality={90}
           /> */}
 
-          <BackgroundVideo
+          {/* <BackgroundVideo
             src={HeroVideo}
             autoPlay
             loop
-            className="z-0 h-full w-full"
+            className="z-0 h-full w-full  object-cover"
+          /> */}
+          <video
+            autoPlay
+            loop
+            muted
+            className="h-full w-full object-cover"
+            src="/videos/Hero.mp4"
           />
         </div>
-      </div>
+      </section>
     </>
   );
 }

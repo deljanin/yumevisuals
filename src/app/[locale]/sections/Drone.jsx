@@ -10,16 +10,15 @@ import DroneVideo from "/videos/Drone.mp4";
 export default function Drone() {
   const lenis = useLenis();
   const t = useTranslations("HomePage.Drone filming");
-  const videoId = useMemo(() => `Drone-${crypto.randomUUID()}`, []);
 
   return (
-    <div
+    <section
       id="drone"
-      className="relative flex h-screen w-full flex-col items-center justify-center bg-black bg-opacity-45 text-center shadow-[0px_-10px_30px_0px_rgba(0,0,0,0.40)]"
+      className="relative z-20 flex h-screen w-full flex-col items-center justify-center bg-black bg-opacity-45 text-center shadow-[0px_5px_25px_0px_rgba(0,0,0,0.5)]"
     >
-      <h1 className="mb-3 font-vonca text-5xl text-white xl:text-8xl">
+      <h2 className="mb-3 font-vonca text-5xl text-white xl:text-8xl">
         {t("Title")}
-      </h1>
+      </h2>
       <p className="mb-10 px-5 text-white md:w-2/3 md:text-lg xl:w-1/3">
         {t("Subtitle")}
       </p>
@@ -35,7 +34,7 @@ export default function Drone() {
       >
         <Button text={t("CTA")} />
       </Link>
-      <div className="absolute bottom-0 left-0 right-0 top-0 -z-10 h-screen w-full">
+      <div className="absolute bottom-0 left-0 right-0 top-0 -z-10 h-screen w-full object-cover">
         {/* <CldVideoPlayer
           className="h-full w-full"
           src="ojr4s0bwm9u5igtcy97m"
@@ -50,14 +49,20 @@ export default function Drone() {
           hideContextMenu
           quality={90}
         /> */}
-        {/* <video
+        <video
           autoPlay
           loop
           muted
           src="/videos/Drone.mp4"
-          className="w-full h-full object-cover"></video> */}
-        <BackgroundVideo src={DroneVideo} autoPlay loop />
+          className="h-full w-full object-cover"
+        ></video>
+        {/* <BackgroundVideo
+          src={DroneVideo}
+          autoPlay
+          loop
+          className="[&>video]:object-cover"
+        /> */}
       </div>
-    </div>
+    </section>
   );
 }

@@ -1,5 +1,5 @@
 "use client";
-import { useEffect, useState } from "react";
+import { isLoadingAtom } from "@/utils/store";
 import Contact from "./sections/Contact";
 import Drone from "./sections/Drone";
 import FAQ from "./sections/FAQ";
@@ -13,27 +13,26 @@ import ZoomParallax from "./sections/ZoomParallax";
 import Preloader from "@/components/Preloader";
 import { AnimatePresence } from "framer-motion";
 import { useAtom } from "jotai";
-import { isLoadingAtom } from "@/utils/store";
+import { useEffect } from "react";
 
 export default function Home() {
   const [isLoading, setIsLoading] = useAtom(isLoadingAtom);
-
   useEffect(() => {
-    setTimeout(() => {
-      setIsLoading(false);
-      console.log("isLoading", isLoading);
+    if (isLoading) {
+      setTimeout(() => {
+        setIsLoading(false);
+        document.body.style.cursor = "default";
+      }, 3000);
+    } else {
       document.body.style.cursor = "default";
-      window.scrollTo(0, 0);
-    }, 1000);
-    // async () => {
-
-    // };
-  });
+    }
+  }, []);
   return (
     <>
       <AnimatePresence mode="wait">
         {isLoading && <Preloader />}
       </AnimatePresence>
+      {/* <Preloader /> */}
       <Hero />
       <ZoomParallax />
       <Videography />

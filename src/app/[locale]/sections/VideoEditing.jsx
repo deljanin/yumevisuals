@@ -15,6 +15,7 @@ import BackgroundVideo from "next-video/background-video";
 // import Video1 from "/videos/VideoEditing/1.mp4";
 // import Video2 from "/videos/VideoEditing/2.mp4";
 import Video3 from "/videos/VideoEditing/3.mp4";
+import AnimateComponent from "@/components/AnimateComponent";
 // import Video4 from "/videos/VideoEditing/4.mp4";
 // import Video5 from "/videos/VideoEditing/5.mp4";
 
@@ -123,9 +124,9 @@ export default function VideoEditing() {
   // };
 
   return (
-    <div
+    <section
       id="videoEditing"
-      className="flex min-h-screen w-full flex-col-reverse items-center justify-between gap-10 bg-[#dfd5d4] px-5 md:px-32 lg:flex-row lg:gap-5 xl:px-64"
+      className="flex min-h-screen w-full flex-col-reverse items-center justify-between gap-10 bg-[#dfd5d4] px-5 py-10 md:px-32 lg:flex-row lg:gap-5 xl:pl-32 xl:pr-64 2xl:px-64"
       // px-5 md:pr-32 lg:flex-row lg:gap-5 xl:pr-64
       // onTouchStart={handleTouchStart}
       // onTouchEnd={handleTouchEnd}
@@ -192,36 +193,49 @@ export default function VideoEditing() {
           ))}
         </div> 
       </div>*/}
-      <div className="h-full w-full">
-        <div className="z-20 h-auto w-[430px] overflow-hidden rounded-3xl shadow-[0px_0px_30px_0px_rgba(0,0,0,0.5)]">
-          <BackgroundVideo
+      <div className="h-full">
+        <div className="z-20 h-auto max-w-[430px] overflow-hidden rounded-3xl shadow-[0px_0px_30px_0px_rgba(0,0,0,0.5)]">
+          {/* <BackgroundVideo
             className=""
             src={Video3}
             muted={true} // Crucial for autoplay
             controls={false}
             loop={true}
+          /> */}
+          <video
+            autoPlay
+            muted
+            loop
+            className={`z-20 rounded-3xl transition-transform duration-1000`}
+            src="/videos/VideoEditing/3.mp4"
           />
         </div>
       </div>
       {/* Text Content */}
-      <div className="flex flex-col text-center md:max-w-[600px] lg:items-end lg:text-right">
-        <h1 className="mb-3 font-vonca text-8xl text-[#66564E]">
-          {t("Title")}
-        </h1>
-        <p className="mb-10 text-lg text-[#66564E]">{t("Subtitle")}</p>
-        <Link
-          href="/#contact"
-          onClick={() => {
-            lenis?.scrollTo("#contact"),
-              {
-                offset: -80,
-                duration: 4,
-              };
-          }}
-        >
-          <Button text={t("CTA")} />
-        </Link>
+      <div className="flex flex-col text-center lg:w-2/3 lg:items-end lg:text-right">
+        <AnimateComponent>
+          <h2 className="mb-3 font-vonca text-[2.7rem] text-[#66564E] sm:text-5xl md:text-6xl xl:text-7xl 2xl:text-8xl">
+            {t("Title")}
+          </h2>
+        </AnimateComponent>
+        <AnimateComponent className="lg:max-w-[500px] 2xl:max-w-[600px]">
+          <p className="mb-10 text-[#66564E] md:text-lg">{t("Subtitle")}</p>
+        </AnimateComponent>
+        <AnimateComponent>
+          <Link
+            href="/#contact"
+            onClick={() => {
+              lenis?.scrollTo("#contact"),
+                {
+                  offset: -80,
+                  duration: 4,
+                };
+            }}
+          >
+            <Button text={t("CTA")} />
+          </Link>
+        </AnimateComponent>
       </div>
-    </div>
+    </section>
   );
 }

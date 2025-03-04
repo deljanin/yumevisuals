@@ -12,19 +12,19 @@ export default function Footer() {
 
   return (
     <div
-      className="relative h-[600px]"
+      className="relative h-[150vh] xl:h-[600px]"
       style={{ clipPath: "polygon(0% 0, 100% 0%, 100% 100%, 0 100%)" }}
     >
-      <div className="fixed bottom-0 h-[600px] w-full bg-[#dfd5d4] text-[#66564E]">
-        <h2 className="text-center font-vonca text-[15.5rem] font-medium">
+      <div className="fixed bottom-0 flex h-[150vh] w-full flex-col justify-end bg-[#dfd5d4] text-[#66564E] lg:justify-center xl:h-[600px]">
+        <h2 className="mb-2 text-center font-vonca text-6xl font-medium md:mb-0 md:text-9xl xl:text-[13rem] 2xl:text-[15.5rem]">
           {t("Heading")}
         </h2>
-        <div className="flex flex-wrap justify-between px-5 md:px-32 xl:px-64">
+        <div className="flex flex-col justify-between gap-5 px-5 md:flex-row md:flex-wrap md:px-32 xl:px-64">
           <div className="flex flex-col">
-            <h5 className="mb-2 font-vonca text-4xl font-medium">
+            <h5 className="mb-2 font-vonca text-2xl font-medium md:text-4xl">
               {t("Group1.Title")}
             </h5>
-            <ul className="text-2xl">
+            <ul className="text-xl md:text-2xl">
               {keys.map((key) => {
                 const link = t(`Group1.Links.${key}.Link`);
                 const scrollLink = link.replace("/", "");
@@ -40,7 +40,7 @@ export default function Footer() {
                         };
                     }}
                   >
-                    <li className="relative cursor-pointer transition-all after:absolute after:bottom-[-2px] after:left-0 after:h-[2px] after:w-full after:origin-bottom-right after:scale-x-0 after:bg-[#66564E] after:transition-transform after:duration-300 after:content-[''] after:hover:origin-bottom-left after:hover:scale-x-100">
+                    <li className="relative flex cursor-pointer items-center gap-2 transition-all after:absolute after:bottom-[-2px] after:left-0 after:h-[2px] after:w-full after:origin-bottom-right after:scale-x-0 after:bg-[#66564E] after:transition-transform after:duration-300 after:content-[''] after:hover:origin-bottom-left after:hover:scale-x-100">
                       {t(`Group1.Links.${key}.Text`)}
                     </li>
                   </Link>
@@ -49,10 +49,10 @@ export default function Footer() {
             </ul>
           </div>
           <div className="flex flex-col">
-            <h5 className="mb-2 font-vonca text-4xl font-medium">
+            <h5 className="mb-2 font-vonca text-2xl font-medium md:text-4xl">
               {t("Group2.Title")}
             </h5>
-            <ul className="text-2xl">
+            <ul className="text-xl md:text-2xl">
               <a href="https://www.instagram.com/yume_visuals" target="_blank">
                 <li className="relative flex cursor-pointer items-center gap-2 transition-all after:absolute after:bottom-[-2px] after:left-0 after:h-[2px] after:w-full after:origin-bottom-right after:scale-x-0 after:bg-[#66564E] after:transition-transform after:duration-300 after:content-[''] after:hover:origin-bottom-left after:hover:scale-x-100">
                   <svg
@@ -92,10 +92,10 @@ export default function Footer() {
             </ul>
           </div>
           <div className="flex flex-col">
-            <h5 className="mb-2 font-vonca text-4xl font-medium">
+            <h5 className="mb-2 font-vonca text-2xl font-medium md:text-4xl">
               {t("Group3.Title")}
             </h5>
-            <ul className="text-2xl">
+            <ul className="text-xl md:text-2xl">
               <a href="mailto:contact@yumevisuals.com" className="">
                 <li className="relative cursor-pointer transition-all after:absolute after:bottom-[-2px] after:left-0 after:h-[2px] after:w-full after:origin-bottom-right after:scale-x-0 after:bg-[#66564E] after:transition-transform after:duration-300 after:content-[''] after:hover:origin-bottom-left after:hover:scale-x-100">
                   contact@yumevisuals.com
@@ -109,16 +109,21 @@ export default function Footer() {
             </ul>
           </div>
           <div className="flex flex-col">
-            <h5 className="mb-2 font-vonca text-4xl font-medium">
+            <h5 className="mb-2 font-vonca text-2xl font-medium md:text-4xl">
               {t("Group4.Title")}
             </h5>
-            <ul className="text-2xl">
+            <ul className="text-xl md:text-2xl">
               <Link href={"/privacy-policy"}>
                 <li className="relative cursor-pointer transition-all after:absolute after:bottom-[-2px] after:left-0 after:h-[2px] after:w-full after:origin-bottom-right after:scale-x-0 after:bg-[#66564E] after:transition-transform after:duration-300 after:content-[''] after:hover:origin-bottom-left after:hover:scale-x-100">
                   {t("Group4.Links.Text1")}
                 </li>
               </Link>
               <li>{formatLineBreak(t("Group4.Links.Text2"))}</li>
+              <a href={t("Group4.Links.Link3")} target="_blank">
+                <li className="relative cursor-pointer transition-all after:absolute after:bottom-[-2px] after:left-0 after:h-[2px] after:w-full after:origin-bottom-right after:scale-x-0 after:bg-[#66564E] after:transition-transform after:duration-300 after:content-[''] after:hover:origin-bottom-left after:hover:scale-x-100">
+                  {t("Group4.Links.Text3")}
+                </li>
+              </a>
             </ul>
           </div>
         </div>

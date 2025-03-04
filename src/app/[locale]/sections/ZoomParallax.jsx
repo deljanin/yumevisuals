@@ -1,20 +1,20 @@
-'use client';
-import Picture1 from '../../../../public/scroll-images/1.jpg';
-import Picture2 from '../../../../public/scroll-images/2.jpg';
-import Picture3 from '../../../../public/scroll-images/3.jpg';
-import Picture4 from '../../../../public/scroll-images/4.jpg';
-import Picture5 from '../../../../public/scroll-images/5.jpg';
-import Picture6 from '../../../../public/scroll-images/6.jpg';
-import Picture7 from '../../../../public/scroll-images/7.jpg';
-import Image from 'next/image';
-import { useScroll, useTransform, motion } from 'framer-motion';
-import { useRef } from 'react';
+"use client";
+import Picture1 from "../../../../public/scroll-images/1.jpg";
+import Picture2 from "../../../../public/scroll-images/2.jpg";
+import Picture3 from "../../../../public/scroll-images/3.jpg";
+import Picture4 from "../../../../public/scroll-images/4.jpg";
+import Picture5 from "../../../../public/scroll-images/5.jpg";
+import Picture6 from "../../../../public/scroll-images/6.jpg";
+import Picture7 from "../../../../public/scroll-images/7.jpg";
+import Image from "next/image";
+import { useScroll, useTransform, motion } from "framer-motion";
+import { useRef } from "react";
 
 export default function ZoomParallax() {
   const container = useRef(null);
   const { scrollYProgress } = useScroll({
     target: container,
-    offset: ['start start', 'end end'],
+    offset: ["start start", "end end"],
   });
 
   const scale4 = useTransform(scrollYProgress, [0, 1], [1, 4]);
@@ -55,41 +55,42 @@ export default function ZoomParallax() {
   ];
 
   return (
-    <div ref={container} className="relative bg-[#987776] h-[300vh]">
+    <section ref={container} className="relative h-[300vh] bg-[#987776]">
       <div className="sticky top-0 h-screen overflow-hidden">
         {pictures.map(({ src, scale }, index) => {
           const imageContainerClasses = [
-            'relative flex items-center justify-center',
-            index === 0 && 'top-0 w-[30vw] h-[35vh]',
+            "relative flex items-center justify-center",
+            index === 0 && "top-0 w-[30vw] h-[35vh]",
             index === 1 &&
-              'top-[-32.5vh] left-[-6.3vw] w-[17.5vw] h-[25vh] scale-x-[-1]',
-            index === 2 && 'top-[-5vh] left-[-24vw] w-[16vw] h-[45vh]',
-            index === 3 && 'top-[12.5vh] left-[26vw]  w-[20vw] h-[60vh]',
-            index === 4 && 'top-[32vh] left-[2.5vw] w-[25vw] h-[25vh]',
-            index === 5 && 'top-[27vh] left-[-22.5vw] w-[23vw] h-[15vh]',
-            index === 6 && 'top-[-28.6vh] left-[16vw] w-[25vw] h-[17vh]',
+              "top-[-32.5vh] left-[-6.3vw] w-[17.5vw] h-[25vh] scale-x-[-1]",
+            index === 2 && "top-[-5vh] left-[-24vw] w-[16vw] h-[45vh]",
+            index === 3 && "top-[12.5vh] left-[26vw]  w-[20vw] h-[60vh]",
+            index === 4 && "top-[32vh] left-[2.5vw] w-[25vw] h-[25vh]",
+            index === 5 && "top-[27vh] left-[-22.5vw] w-[23vw] h-[15vh]",
+            index === 6 && "top-[-28.6vh] left-[16vw] w-[25vw] h-[17vh]",
           ]
             .filter(Boolean)
-            .join(' ');
+            .join(" ");
 
           return (
             <motion.div
               key={index}
               style={{ scale }}
-              className="absolute w-full h-full top-0 flex items-center justify-center">
+              className="absolute top-0 flex h-full w-full items-center justify-center"
+            >
               <div className={imageContainerClasses}>
                 <Image
                   src={src}
                   fill
                   alt="image"
                   placeholder="blur"
-                  className="object-cover "
+                  className="object-cover"
                 />
               </div>
             </motion.div>
           );
         })}
       </div>
-    </div>
+    </section>
   );
 }

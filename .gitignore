@@ -41,7 +41,13 @@ next-env.d.ts
 
 # next-video
 videos/*
+!videos/VideoEditing/*.json
+!videos/VideoEditing/*.js
+!videos/VideoEditing/*.ts
 !videos/*.json
 !videos/*.js
 !videos/*.ts
 public/_next-video
+
+# local vids for dev
+#public/videos/*

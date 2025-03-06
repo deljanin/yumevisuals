@@ -2,11 +2,11 @@
 import formatLineBreak from "@/utils/formatLineBreak";
 import Button from "../../../components/Button";
 import { useTranslations } from "next-intl";
-import Link from "next/link";
 import { useLenis } from "lenis/react";
 import BackgroundVideo from "next-video/background-video";
 import HeroVideo from "/videos/Hero.mp4";
 import AnimateComponent from "@/components/AnimateComponent";
+import { Link } from "@/i18n/routing";
 
 export default function Hero() {
   const lenis = useLenis();

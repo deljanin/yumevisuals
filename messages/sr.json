@@ -5,7 +5,10 @@
         "Text": "Početna",
         "Link": "/#hero"
       },
-
+      "Services": {
+        "Text": "Usluge",
+        "Link": "/#services"
+      },
       "About": {
         "Text": "O nama",
         "Link": "/about"
@@ -117,10 +120,10 @@
       "Service0": {
         "Title": "Videografija",
         "Subtitle1": "Kompletna video produkcija prilagođena vašim potrebama",
-        "Subtitle2": "Savršeno za događaje, reklame, muzičke spotove i još mnogo toga",
+        "Subtitle2": "Savršeno za sadrzaj za drustvene mreze, reklame, dogadjaje i još mnogo toga",
         "Price": "Od 150€",
         "List": {
-          "item1": "Kompletna video produkcija (događaji, muzički spotovi, reklame itd.)",
+          "item1": "Kompletna video produkcija (reel-ovi, reklame, dogadjaji...)",
           "item2": "Uključuje: planiranje, snimanje i post-produkciju",
           "item3": "Prednosti: HD kvalitet, profesionalno pripovedanje, prilagodljiv stil"
         },

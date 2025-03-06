@@ -5,7 +5,10 @@
         "Text": "Home",
         "Link": "/#hero"
       },
-
+      "Services": {
+        "Text": "Services",
+        "Link": "/#services"
+      },
       "About": {
         "Text": "About us",
         "Link": "/about"
@@ -117,10 +120,10 @@
       "Service0": {
         "Title": "Videography",
         "Subtitle1": "Full-service video production tailored to your needs",
-        "Subtitle2": "Perfect for events, commercials, music videos, and more",
+        "Subtitle2": "Perfect for social media content, ads, events and more",
         "Price": "From $150",
         "List": {
-          "item1": "Complete video production (events, music videos, etc.)",
+          "item1": "Complete video production (reels, ads, events etc.)",
           "item2": "Includes: Pre-production planning, shooting, and post-production",
           "item3": "Benefits: 4K quality, professional storytelling, adaptable style"
         },

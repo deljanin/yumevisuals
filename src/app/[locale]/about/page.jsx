@@ -20,7 +20,7 @@ export default function About() {
             className="sticky top-0 flex h-screen w-full flex-col justify-center bg-[#987776] px-5 text-white shadow-[0px_0px_210px_0px_rgba(0,0,0,0.50)] md:px-32 xl:px-64"
           >
             <Image
-              src={`/parallax-images/${i + 4}.jpg`}
+              src={`/about-images/${i + 1}.jpg`}
               alt="img"
               fill
               className="absolute top-0 -z-20 h-full w-full object-cover"

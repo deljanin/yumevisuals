@@ -62,12 +62,17 @@ export default function ZoomParallax() {
             "relative flex items-center justify-center",
             index === 0 && "top-0 w-[30vw] h-[35vh]",
             index === 1 &&
-              "top-[-32.5vh] left-[-6.3vw] w-[17.5vw] h-[25vh] scale-x-[-1]",
-            index === 2 && "top-[-5vh] left-[-24vw] w-[16vw] h-[45vh]",
-            index === 3 && "top-[12.5vh] left-[26vw]  w-[20vw] h-[60vh]",
-            index === 4 && "top-[32vh] left-[2.5vw] w-[25vw] h-[25vh]",
-            index === 5 && "top-[27vh] left-[-22.5vw] w-[23vw] h-[15vh]",
-            index === 6 && "top-[-28.6vh] left-[16vw] w-[25vw] h-[17vh]",
+              "top-[-31vh] left-[3vw] w-[36vw] h-[23vh] sm:top-[-32.5vh] sm:left-[-6.3vw] sm:w-[17.5vw] sm:h-[25vh] scale-x-[-1]",
+            index === 2 &&
+              "top-[-5vh] left-[-34.5vw] w-[33vw] sm:left-[-24vw] sm:w-[16vw] h-[45vh]",
+            index === 3 &&
+              "top-[5vh] left-[34vw] w-[32vw] h-[45vh] sm:top-[12.5vh] sm:left-[26vw] sm:w-[20vw] sm:h-[60vh]",
+            index === 4 &&
+              "top-[32vh] left-[0vw] w-[30vw] h-[25vh] sm:left-[2.5vw] sm:w-[25vw]",
+            index === 5 &&
+              "top-[27.5vh] left-[-36vw] w-[37vw] h-[16vh] sm:top-[27vh] sm:left-[-22.5vw] sm:w-[23vw] sm:h-[15vh]",
+            index === 6 &&
+              "top-[-28vh] left-[36.5vw] w-[25vw] h-[17vh] sm:left-[16vw]",
           ]
             .filter(Boolean)
             .join(" ");
@@ -86,6 +91,7 @@ export default function ZoomParallax() {
                   placeholder="blur"
                   className="object-cover"
                 />
+                {/* <div className="absolute">{index}</div> */}
               </div>
             </motion.div>
           );

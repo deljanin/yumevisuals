@@ -40,20 +40,22 @@ export default function Services() {
                     <li className="">{t(`Service${i}.List.item2`)}</li>
                     <li className="">{t(`Service${i}.List.item3`)}</li>
                   </ul>
-                  <Link href="/#contact" className="mt-auto">
-                    <button
-                      className="mt-4 rounded-3xl bg-[#987776] px-6 py-2 text-lg tracking-wide text-white shadow-[0px_0px_30px_-9px_rgba(0,0,0,0.25)] transition-all delay-100 group-hover:scale-105 group-hover:shadow-[0px_0px_30px_-9px_rgba(0,0,0,0.5)]"
-                      onClick={() => {
-                        lenis?.scrollTo("#contact"),
-                          {
-                            offset: -80,
-                            duration: 4,
-                          };
-                      }}
-                    >
-                      {t(`Service${i}.CTA`)}
-                    </button>
-                  </Link>
+                  <div className="mt-auto">
+                    <Link href="/#contact">
+                      <button
+                        className="mt-4 rounded-3xl bg-[#987776] px-6 py-2 text-lg tracking-wide text-white shadow-[0px_0px_30px_-9px_rgba(0,0,0,0.25)] transition-all delay-100 group-hover:scale-105 group-hover:shadow-[0px_0px_30px_-9px_rgba(0,0,0,0.5)]"
+                        onClick={() => {
+                          lenis?.scrollTo("#contact"),
+                            {
+                              offset: -80,
+                              duration: 4,
+                            };
+                        }}
+                      >
+                        {t(`Service${i}.CTA`)}
+                      </button>
+                    </Link>
+                  </div>
                 </div>
               </AnimateComponent>
             );

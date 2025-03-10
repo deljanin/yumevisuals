@@ -23,7 +23,8 @@ export default function About() {
               src={`/about-images/${i + 1}.jpg`}
               alt="img"
               fill
-              className="absolute top-0 -z-20 h-full w-full object-cover"
+              priority={i === 0}
+              className={`absolute top-0 -z-20 h-full w-full object-cover ${i === 1 ? "object-[70%_50%]" : ""}`}
             />
             <div className="absolute left-0 top-0 -z-10 h-full w-full bg-black bg-opacity-40"></div>
             <h2 className="mb-5 font-vonca text-[2.7rem] leading-none sm:text-5xl md:text-6xl">

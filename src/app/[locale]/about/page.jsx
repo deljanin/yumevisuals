@@ -3,24 +3,29 @@ import { useTranslations } from "next-intl";
 import Image from "next/image";
 import { useEffect } from "react";
 
+import Image1 from "../../../../public/about-images/1.jpg";
+import Image2 from "../../../../public/about-images/2.jpg";
+import Image3 from "../../../../public/about-images/3.jpg";
+
 export default function About() {
   const t = useTranslations("AboutPage.Hero");
 
   useEffect(() => {
     document.body.style.cursor = "default";
   }, []);
+  const images = [Image1, Image2, Image3];
 
   return (
     // px-5 md:px-32 xl:px-64
     <div className="relative">
-      {[...Array(3)].map((_, i) => {
+      {images.map((image, i) => {
         return (
           <div
             key={i}
             className="sticky top-0 flex h-screen w-full flex-col justify-center bg-[#987776] px-5 text-white shadow-[0px_0px_210px_0px_rgba(0,0,0,0.50)] md:px-32 xl:px-64"
           >
             <Image
-              src={`/about-images/${i + 1}.jpg`}
+              src={image}
               alt="img"
               fill
               priority={i === 0}

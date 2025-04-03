@@ -3,8 +3,6 @@ import { useTranslations } from "next-intl";
 import Button from "../../../components/Button";
 import { useLenis } from "lenis/react";
 import { motion } from "framer-motion";
-import BackgroundVideo from "next-video/background-video";
-import VideographyVideo from "/videos/Videography.mp4";
 import { Link } from "@/i18n/routing";
 
 export default function Videography() {

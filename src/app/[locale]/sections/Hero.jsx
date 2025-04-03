@@ -3,10 +3,13 @@ import formatLineBreak from "@/utils/formatLineBreak";
 import Button from "../../../components/Button";
 import { useTranslations } from "next-intl";
 import { useLenis } from "lenis/react";
-import BackgroundVideo from "next-video/background-video";
-import HeroVideo from "/videos/Hero.mp4";
-import AnimateComponent from "@/components/AnimateComponent";
 import { Link } from "@/i18n/routing";
+import dynamic from "next/dynamic";
+
+const MuxPlayer = dynamic(() => import("@mux/mux-player-react"), {
+  ssr: false,
+  loading: () => <div className="h-full w-full bg-[#987776]" />,
+});
 
 export default function Hero() {
   const lenis = useLenis();
@@ -41,35 +44,18 @@ export default function Hero() {
             className="px-3 py-1.5 md:px-6 md:py-3 md:text-xl"
           />
         </Link>
-        <div className="absolute bottom-0 left-0 right-0 top-0">
+        <div className="absolute inset-0">
           <div className="absolute bottom-0 z-20 h-[20px] w-full bg-gradient-to-b from-[rgba(0,0,0,0)] to-[#987776]"></div>
           <div className="absolute z-10 h-full w-full bg-[rgba(0,0,0,0.6)]"></div>
-          {/* <CldVideoPlayer
-            src="pcoxj19uvbv1wrdzkghb"
-            className="pointer-events-none -z-10 h-full w-full"
-            width="1920"
-            height="1080"
-            muted
-            loop
+          <MuxPlayer
+            playbackId="uRubwZ502E1pJgL8NBYZ1HoODO7jYcFL1nXnsTAERJjk"
+            streamType="on-demand"
+            preload="auto"
+            metadataVideoTitle="Hero video"
             autoPlay={true}
-            autoplayMode="on-scroll"
-            controls={false}
-            hideContextMenu
-            quality={90}
-          /> */}
-
-          {/* <BackgroundVideo
-            src={HeroVideo}
-            autoPlay
-            loop
-            className="z-0 h-full w-full  object-cover"
-          /> */}
-          <video
-            autoPlay
-            loop
             muted
-            className="h-full w-full object-cover"
-            src="/videos/Hero.mp4"
+            loop
+            className="h-full w-full [--controls:none] [--media-object-fit:cover]"
           />
         </div>
       </section>

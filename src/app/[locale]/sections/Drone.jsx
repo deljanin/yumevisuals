@@ -3,17 +3,25 @@ import { useLenis } from "lenis/react";
 import { Link } from "@/i18n/routing";
 import Button from "@/components/Button";
 import { useTranslations } from "next-intl";
-import { useMemo } from "react";
-import BackgroundVideo from "next-video/background-video";
-import DroneVideo from "/videos/Drone.mp4";
+import dynamic from "next/dynamic";
+import { useRef } from "react";
+import { useInView } from "framer-motion";
+
+const MuxPlayer = dynamic(() => import("@mux/mux-player-react"), {
+  ssr: false,
+  loading: () => <div className="h-full w-full bg-[#987776]" />,
+});
 
 export default function Drone() {
   const lenis = useLenis();
   const t = useTranslations("HomePage.Drone filming");
+  const sectionRef = useRef(null);
+  const isVisible = useInView(sectionRef, { amount: 0.01, once: true });
 
   return (
     <section
       id="drone"
+      ref={sectionRef}
       className="relative z-20 flex h-screen w-full flex-col items-center justify-center bg-black bg-opacity-45 text-center shadow-[0px_5px_25px_0px_rgba(0,0,0,0.5)]"
     >
       <h2 className="mb-3 font-vonca text-5xl text-white xl:text-8xl">
@@ -35,33 +43,16 @@ export default function Drone() {
         <Button text={t("CTA")} />
       </Link>
       <div className="absolute bottom-0 left-0 right-0 top-0 -z-10 h-screen w-full object-cover">
-        {/* <CldVideoPlayer
-          className="h-full w-full"
-          src="ojr4s0bwm9u5igtcy97m"
-          width="1920"
-          height="1080"
-          loop
-          autoPlay={true}
-          autoplayMode="on-scroll"
+        <MuxPlayer
+          playbackId="NxTieL3hLH01AwE7jCYvlOItQtP9TDsMQa9RMN2yF025g"
+          streamType="on-demand"
+          preload="auto"
+          metadataVideoTitle="Drone video"
+          autoPlay={isVisible}
           muted
-          bigPlayButton={false}
-          controls={false}
-          hideContextMenu
-          quality={90}
-        /> */}
-        <video
-          autoPlay
           loop
-          muted
-          src="/videos/Drone.mp4"
-          className="h-full w-full object-cover"
-        ></video>
-        {/* <BackgroundVideo
-          src={DroneVideo}
-          autoPlay
-          loop
-          className="[&>video]:object-cover"
-        /> */}
+          className="h-full w-full [--controls:none] [--media-object-fit:cover]"
+        />
       </div>
     </section>
   );

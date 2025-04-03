@@ -2,19 +2,21 @@
 import Button from "@/components/Button";
 import { Link, usePathname } from "@/i18n/routing";
 import { useTranslations } from "next-intl";
-import { useState, useEffect, useMemo, useRef } from "react";
-import Logo from "@/components/Logo";
+import { useState, useRef } from "react";
+// import Logo from "@/components/Logo";
 import { useLenis } from "lenis/react";
+import { useInView } from "framer-motion";
+import dynamic from "next/dynamic";
 
 // import { useAtom } from "jotai";
 // import { currentPathAtom, videoIndexAtom } from "@/utils/store";
 
 // import Player from "@/components/Player";
 // import Video from "next-video";
-import BackgroundVideo from "next-video/background-video";
+
 // import Video1 from "/videos/VideoEditing/1.mp4";
 // import Video2 from "/videos/VideoEditing/2.mp4";
-import Video3 from "/videos/VideoEditing/3.mp4";
+// import Video3 from "/videos/VideoEditing/3.mp4";
 import AnimateComponent from "@/components/AnimateComponent";
 // import Video4 from "/videos/VideoEditing/4.mp4";
 // import Video5 from "/videos/VideoEditing/5.mp4";
@@ -30,6 +32,14 @@ import AnimateComponent from "@/components/AnimateComponent";
 export default function VideoEditing() {
   const lenis = useLenis();
   const t = useTranslations("HomePage.Video editing");
+
+  const MuxPlayer = dynamic(() => import("@mux/mux-player-react"), {
+    ssr: false,
+    loading: () => <div className="h-full w-full bg-[#987776]" />,
+  });
+  const sectionRef = useRef(null);
+  const isVisible = useInView(sectionRef, { amount: 0.01, once: true });
+
   // const [currentPath] = useAtom(currentPathAtom);
   // const [videoIndex, setVideoIndex] = useAtom(videoIndexAtom); // Center video index
   const [isAnimating, setIsAnimating] = useState(false); // Prevent overlapping animations
@@ -126,6 +136,7 @@ export default function VideoEditing() {
   return (
     <section
       id="videoEditing"
+      ref={sectionRef}
       className="flex min-h-screen w-full flex-col-reverse items-center justify-between gap-10 bg-[#dfd5d4] px-5 py-10 md:px-32 lg:flex-row lg:gap-5 xl:pl-32 xl:pr-64 2xl:px-64"
       // px-5 md:pr-32 lg:flex-row lg:gap-5 xl:pr-64
       // onTouchStart={handleTouchStart}
@@ -194,20 +205,16 @@ export default function VideoEditing() {
         </div> 
       </div>*/}
       <div className="h-full">
-        <div className="z-20 h-auto max-w-[430px] overflow-hidden rounded-3xl shadow-[0px_0px_30px_0px_rgba(0,0,0,0.5)]">
-          {/* <BackgroundVideo
-            className=""
-            src={Video3}
-            muted={true} // Crucial for autoplay
-            controls={false}
-            loop={true}
-          /> */}
-          <video
-            autoPlay
+        <div className="z-20 aspect-[9/16] w-full overflow-hidden rounded-3xl shadow-[0px_0px_30px_0px_rgba(0,0,0,0.5)] sm:max-w-[435px] lg:w-[435px]">
+          <MuxPlayer
+            playbackId="SBJ4y4SQ87hj7Hgbb2ordyLGpPenWIyjqPCBU2lqrOk"
+            streamType="on-demand"
+            preload="auto"
+            metadataVideoTitle="Vide0 editing video"
+            autoPlay={isVisible}
             muted
             loop
-            className={`z-20 rounded-3xl transition-transform duration-1000`}
-            src="/videos/VideoEditing/3.mp4"
+            className="h-full w-full object-cover [--controls:none] [--media-object-fit:cover]"
           />
         </div>
       </div>

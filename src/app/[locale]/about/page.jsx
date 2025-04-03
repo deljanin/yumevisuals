@@ -28,6 +28,7 @@ export default function About() {
               src={image}
               alt="img"
               fill
+              placeholder="blur"
               priority={i === 0}
               className={`absolute top-0 -z-20 h-full w-full object-cover ${i === 1 ? "object-[70%_50%]" : ""}`}
             />

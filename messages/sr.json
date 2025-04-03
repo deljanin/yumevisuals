@@ -19,7 +19,7 @@
       }
     },
     "Footer": {
-      "Heading": "Yume Vizuali",
+      "Heading": "Yume Visuals",
       "Group1": {
         "Title": "Usluge",
         "Links": {
@@ -38,8 +38,8 @@
       },
       "Group3": {
         "Title": "Kontakt",
-        "Text1": "contact@yumevisuals.com",
-        "Link1": "mailto:contact@yumevisuals.com"
+        "Text1": "info@yumevisuals.com",
+        "Link1": "mailto:info@yumevisuals.com"
       },
       "Group4": {
         "Title": "Ostalo",

@@ -71,7 +71,7 @@ export default function Footer() {
                   Instagram
                 </li>
               </a>
-              <a href="https://www.facebook.com/yumevisuals" target="_blank">
+              {/* <a href="https://www.facebook.com/yumevisuals" target="_blank">
                 <li className="relative flex cursor-pointer items-center gap-2 transition-all after:absolute after:bottom-[-2px] after:left-0 after:h-[2px] after:w-full after:origin-bottom-right after:scale-x-0 after:bg-[#66564E] after:transition-transform after:duration-300 after:content-[''] after:hover:origin-bottom-left after:hover:scale-x-100">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -88,7 +88,7 @@ export default function Footer() {
                   </svg>{" "}
                   TODO Facebook?
                 </li>
-              </a>
+              </a> */}
             </ul>
           </div>
           <div className="flex flex-col">
@@ -98,14 +98,14 @@ export default function Footer() {
             <ul className="text-xl md:text-2xl">
               <a href="mailto:contact@yumevisuals.com" className="">
                 <li className="relative cursor-pointer transition-all after:absolute after:bottom-[-2px] after:left-0 after:h-[2px] after:w-full after:origin-bottom-right after:scale-x-0 after:bg-[#66564E] after:transition-transform after:duration-300 after:content-[''] after:hover:origin-bottom-left after:hover:scale-x-100">
-                  contact@yumevisuals.com
+                  info@yumevisuals.com
                 </li>
               </a>
-              <a href="mailto:contact@yumevisuals.com" className="">
+              {/* <a href="mailto:contact@yumevisuals.com" className="">
                 <li className="relative cursor-pointer transition-all after:absolute after:bottom-[-2px] after:left-0 after:h-[2px] after:w-full after:origin-bottom-right after:scale-x-0 after:bg-[#66564E] after:transition-transform after:duration-300 after:content-[''] after:hover:origin-bottom-left after:hover:scale-x-100">
                   TODO TELEGRAM?
                 </li>
-              </a>
+              </a> */}
             </ul>
           </div>
           <div className="flex flex-col">

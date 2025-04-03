@@ -60,13 +60,13 @@ export default function ZoomParallax() {
         {pictures.map(({ src, scale }, index) => {
           const imageContainerClasses = [
             "relative flex items-center justify-center",
-            index === 0 && "top-0 w-[30vw] h-[35vh]",
+            index === 0 && "top-0 w-[35vw] h-[35vh] md:w-[30vw] md:h-[35vh]",
             index === 1 &&
               "top-[-31vh] left-[3vw] w-[36vw] h-[23vh] sm:top-[-32.5vh] sm:left-[-6.3vw] sm:w-[17.5vw] sm:h-[25vh] scale-x-[-1]",
             index === 2 &&
-              "top-[-5vh] left-[-34.5vw] w-[33vw] sm:left-[-24vw] sm:w-[16vw] h-[45vh]",
+              "top-[-5vh] left-[-37vw] w-[33vw] sm:left-[-24vw] sm:w-[16vw] h-[45vh]",
             index === 3 &&
-              "top-[5vh] left-[34vw] w-[32vw] h-[45vh] sm:top-[12.5vh] sm:left-[26vw] sm:w-[20vw] sm:h-[60vh]",
+              "top-[5vh] left-[36.5vw] w-[32vw] h-[45vh] sm:top-[12.5vh] sm:left-[26vw] sm:w-[20vw] sm:h-[60vh]",
             index === 4 &&
               "top-[32vh] left-[0vw] w-[30vw] h-[25vh] sm:left-[2.5vw] sm:w-[25vw]",
             index === 5 &&

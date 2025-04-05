@@ -201,6 +201,8 @@
         "Title": "Vaša ideja",
         "Placeholder": "Potrebno mi je snimanje za moj brend"
       },
+      "PrivacyPolicyText1": "Popunjavanjem ove forme, prihvatate našu ",
+      "PrivacyPolicyText2": "Politiku Privatnosti",
       "CTA": "Pošalji poruku"
     }
   },
@@ -212,6 +214,98 @@
       "Description2": "Zamisli ovu scenu: Negde jos za vreme srednje skole, gledala sam jedan strava film od Kurosave koji se zove “Yume” (sto na japanskom znaci Snovi) i, ocigledno, je bio o njegovim snovima. Pa mi je palo na pamet… sto ja ne bih napravila film o svojim snovima? 🤔I upalila mi se lampica💡 sa idejom da krenem u skolu filma. I ta-daa🥁, pocelo je moje filmsko putovanje, i usput se malo izmenilo. Tako da svaki put kad procitas Yume Visuals, seti se da je sve u ozivljavanju snova (romanticno, znam)🫶 Stay tuned za kreativan sadrzaj! ",
       "Heading3": "Čime se mi bavimo?",
       "Description3": "Mi se bavimo kreiranjem razlicitog foto i video sadrzaja za tebe ili tvoj brend. 🎥 Da li je za drustvene mreze, website ili za neke druge svrhe- we've got you covered. 🤗 Filip takodje poseduje nerealan skil za voznju drona pa moze da snimi sve i iz pticije perspektive."
+    }
+  },
+  "PrivacyPolicyPage": {
+    "Title": "Politika privatnosti",
+    "Date": "Datum stupanja na snagu: 2.4.2025",
+    "Lists": {
+      "List1": {
+        "Heading": "1. Informacije koje prikupljamo",
+        "Description": "Prikupljamo različite vrste informacija kako bismo pružili i poboljšali naše usluge:",
+        "Points": {
+          "Point1": "Lični podaci: Kada nas kontaktirate putem našeg kontakt formulara, prikupljamo vaše ime, email adresu i poslovne podatke.",
+          "Point2": "Automatski podaci: Možemo prikupljati nepersonalne podatke kao što su vaša IP adresa, vrsta pretraživača, operativni sistem i posećene stranice putem analitičkih alata."
+        }
+      },
+
+      "List2": {
+        "Heading": "2. Kako koristimo vaše informacije",
+        "Description": "Prikupljene podatke koristimo za:",
+        "Points": {
+          "Point1": "Odgovaranje na upite i pružanje traženih usluga",
+          "Point2": "Poboljšanje našeg sajta, usluga i korisničkog iskustva",
+          "Point3": "Komuniciranje ažuriranja i ponuda",
+          "Point4": "Zaštitu od prevarnih ili neovlašćenih aktivnosti"
+        }
+      },
+
+      "List3": {
+        "Heading": "3. Pravni osnov za obradu podataka",
+        "Description": "Ako se nalazite u Evropskom ekonomskom prostoru (EEA), pravni osnov za prikupljanje i korišćenje vaših ličnih podataka zavisi od specifičnih podataka i konteksta u kojem su prikupljeni. Vaše podatke obrađujemo na osnovu:",
+        "Points": {
+          "Point1": "Vaše saglasnosti kada popunite naš kontakt formular",
+          "Point2": "Našeg legitimnog interesa za poboljšanje naših usluga",
+          "Point3": "Usklađenosti sa zakonskim obavezama"
+        }
+      },
+
+      "List4": {
+        "Heading": "4. Deljenje vaših informacija",
+        "Description": "Ne prodajemo niti iznajmljujemo vaše lične podatke. Vaše podatke možemo deliti sa:",
+        "Points": {
+          "Point1": "Pružaocima usluga: Trećim stranama koje pomažu u radu našeg sajta i usluga",
+          "Point2": "Zakonskim organima: Ako to zakon zahteva ili radi zaštite naših prava"
+        }
+      },
+
+      "List5": {
+        "Heading": "5. Kolačići i tehnologije praćenja",
+        "Description": "Ne koristimo kolačiće.",
+        "Points": {}
+      },
+
+      "List6": {
+        "Heading": "6. Čuvanje podataka",
+        "Description": "Lične podatke čuvamo samo onoliko dugo koliko je potrebno za svrhe navedene u ovoj politici, osim ako zakon ne zahteva duži period čuvanja.",
+        "Points": {}
+      },
+
+      "List7": {
+        "Heading": "7. Vaša prava",
+        "Description": "Imate pravo na:",
+        "Points": {
+          "Point1": "Pristup, ažuriranje ili brisanje vaših ličnih podataka",
+          "Point2": "Zahtev za kopiju vaših podataka",
+          "Point3": "Povlačenje saglasnosti za obradu podataka"
+        }
+      },
+
+      "List8": {
+        "Heading": "8. Privatnost dece",
+        "Description": "Naše usluge nisu namenjene osobama mlađim od 13 godina. Ne prikupljamo svesno lične podatke od dece. Ako smatrate da smo prikupili podatke od maloletnika, kontaktirajte nas radi njihovog uklanjanja.",
+        "Points": {}
+      },
+
+      "List9": {
+        "Heading": "9. Linkovi ka trećim stranama",
+        "Description": "Naš sajt može sadržati linkove ka sajtovima trećih strana. Nismo odgovorni za njihove politike privatnosti.",
+        "Points": {}
+      },
+
+      "List10": {
+        "Heading": "10. Ažuriranja ove politike",
+        "Description": "Ova politika može biti ažurirana periodično. Najnovija verzija biće objavljena na našem sajtu, a korisnici će biti obavešteni o značajnim izmenama.",
+        "Points": {}
+      },
+
+      "List11": {
+        "Heading": "12. Kontaktirajte nas",
+        "Description": "Ako imate bilo kakva pitanja u vezi sa ovom politikom privatnosti, kontaktirajte nas na:",
+        "CompanyName": "Yume Visuals",
+        "Email": "info@yumevisuals.com",
+        "Points": {}
+      }
     }
   }
 }

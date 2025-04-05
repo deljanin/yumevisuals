@@ -6,6 +6,7 @@ import formatLineBreak from "@/utils/formatLineBreak";
 import { Formik, Field, Form, ErrorMessage } from "formik";
 import * as yup from "yup";
 import { useInView, animate, motion } from "framer-motion";
+import { Link } from "@/i18n/routing";
 
 export default function Contact() {
   const t = useTranslations("HomePage.Contact");
@@ -158,6 +159,12 @@ export default function Contact() {
                 placeholder={t("MessageInput.Placeholder")}
                 className="w-full rounded-2xl bg-[#DFD5D4] p-4 text-[#66564E] placeholder-[rgba(102,86,78,0.75)] caret-black outline-none"
               />
+              <span className="text-sm opacity-30 transition-all duration-300 hover:opacity-80">
+                {t("PrivacyPolicyText1")}
+                <Link href="/privacy-policy" className="underline">
+                  {t("PrivacyPolicyText2")}
+                </Link>
+              </span>
             </motion.div>
             <motion.div initial={{ opacity: 0, y: 50 }} id="submit">
               <Button

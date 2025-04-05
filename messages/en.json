@@ -202,6 +202,8 @@
         "Title": "Video in mind",
         "Placeholder": "I need you to edit my wedding videos..."
       },
+      "PrivacyPolicyText1": "By submitting this form you agree to our ",
+      "PrivacyPolicyText2": "Privacy Policy",
       "CTA": "Send message"
     }
   },
@@ -213,6 +215,98 @@
       "Description2": "Picture this: I was chilling one day, some time during highschooler times, watching this epic film by Kurosawa called “Yume” ( which means dream in Japanese, FYI🤗) And it was mind-blowing, and all about his dreams obviously. So it got me thinking… why not capture my own dreams on the big screen?🤔 That’s when the lightbulb moment hit me💡, and I decided to chase my dreams at film school. And ta-da🥁, that’s how my epic cinematography journey began! So, every time you see Yume Visuals, remember it’s all about bringing dreams to life through our lenses. Stay tuned for the magic we create! ",
       "Heading3": "What we actually do",
       "Description3": "We specialize in creating various types of photo or video content for you or your brand. 🎥Whether it's for social media, your website, or any other purpose, we've got you covered. Filip is also equipped with special drone flying skills to capture some amazing aerial shots."
+    }
+  },
+  "PrivacyPolicyPage": {
+    "Title": "Privacy Policy",
+    "Date": "Effective Date: 2.4.2025",
+    "Lists": {
+      "List1": {
+        "Heading": "1. Information We Collect",
+        "Description": "We collect different types of information to provide and improve our services:",
+        "Points": {
+          "Point1": "Personal Information: When you contact us via our contact form, we collect your name, email address, and business details.",
+          "Point2": "Automated Data: We may collect non-personal data such as your IP address, browser type, operating system, and pages visited through analytics tools."
+        }
+      },
+
+      "List2": {
+        "Heading": "2. How We Use Your Information",
+        "Description": "We use the collected data to:",
+        "Points": {
+          "Point1": "Respond to inquiries and provide requested services",
+          "Point2": "Improve our website, services, and user experience",
+          "Point3": "Communicate updates and offers",
+          "Point4": "Protect against fraudulent or unauthorized activities"
+        }
+      },
+
+      "List3": {
+        "Heading": "3. Legal Basis for Processing Data",
+        "Description": "If you are located in the European Economic Area (EEA), our legal basis for collecting and using your personal information depends on the specific data collected and the context in which it is collected. We process your data based on:",
+        "Points": {
+          "Point1": "Your consent when you submit our contact form",
+          "Point2": "Our legitimate interests in improving our services",
+          "Point3": "Compliance with legal obligations"
+        }
+      },
+
+      "List4": {
+        "Heading": "4. Sharing Your Information",
+        "Description": "We do not sell or rent your personal data. We may share your information with:",
+        "Points": {
+          "Point1": "Service Providers: Third-party vendors who assist in running our website and services",
+          "Point2": "Legal Compliance: If required by law or to protect our rights"
+        }
+      },
+
+      "List5": {
+        "Heading": "5. Cookies & Tracking Technologies",
+        "Description": "We do not use cookies.",
+        "Points": {}
+      },
+
+      "List6": {
+        "Heading": "6. Data Retention",
+        "Description": "We retain personal data only as long as necessary for the purposes outlined in this policy, unless a longer retention period is required by law.",
+        "Points": {}
+      },
+
+      "List7": {
+        "Heading": "7. Your Rights",
+        "Description": "You have the right to:",
+        "Points": {
+          "Point1": "Access, update, or delete your personal data",
+          "Point2": "Request a copy of your data",
+          "Point3": "Withdraw consent for data processing"
+        }
+      },
+
+      "List8": {
+        "Heading": "8. Children's Privacy",
+        "Description": "Our services are not directed at individuals under the age of 13. We do not knowingly collect personal data from children. If you believe we have collected data from a minor, please contact us for removal.",
+        "Points": {}
+      },
+
+      "List9": {
+        "Heading": "9. Third-Party Links",
+        "Description": "Our website may contain links to third-party sites. We are not responsible for their privacy policies.",
+        "Points": {}
+      },
+
+      "List10": {
+        "Heading": "10. Updates to This Policy",
+        "Description": "We may update this policy periodically. The latest version will be posted on our website, and we will notify users of any significant changes.",
+        "Points": {}
+      },
+
+      "List11": {
+        "Heading": "12. Contact Us",
+        "Description": "If you have any questions about this Privacy Policy, please contact us at:",
+        "CompanyName": "Yume Visuals",
+        "Email": "info@yumevisuals.com",
+        "Points": {}
+      }
     }
   }
 }

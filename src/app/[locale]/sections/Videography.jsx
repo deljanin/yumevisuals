@@ -4,7 +4,12 @@ import Button from "../../../components/Button";
 import { useLenis } from "lenis/react";
 import { motion } from "framer-motion";
 import { Link } from "@/i18n/routing";
+import dynamic from "next/dynamic";
 
+const MuxPlayer = dynamic(() => import("@mux/mux-player-react"), {
+  ssr: false,
+  loading: () => <div className="h-full w-full bg-[#987776]" />,
+});
 export default function Videography() {
   const lenis = useLenis();
   const t = useTranslations("HomePage.Videography");
@@ -58,29 +63,24 @@ filter: "blur(0px)", */}
       <div className="absolute -top-[56.5vh] left-0 z-20 h-[100vh] w-[110%] -skew-y-[25deg] bg-[#987776] shadow-[-50px_-5px_25px_0px_rgba(0,0,0,0.3)_inset]"></div>
       <div className="absolute bottom-0 z-10 h-[5%] w-full bg-gradient-to-t from-[#dfd5d4ff] to-[#dfd5d400]"></div>
       <div className="absolute top-0 h-full w-full object-cover">
-        {/* <CldVideoPlayer
-          src="iasvx3llxdu24kvjn1oi"
-          width="1920"
-          height="1080"
-          loop
+        <MuxPlayer
+          playbackId="01yzE2ZfQ8cNxeAfQf6xHyouGuesOEEwZv7xZ3Z01IU3c"
+          streamType="on-demand"
+          preload="auto"
+          metadataVideoTitle="Videography video"
           autoPlay={true}
-          autoplayMode="on-scroll"
           muted
-          bigPlayButton={false}
-          controls={false}
-          hideContextMenu
-          quality={90}
-        /> */}
-        {/* <BackgroundVideo src={VideographyVideo} autoPlay loop />
-         */}
-        <video
+          loop
+          className="absolute top-0 h-full w-full [--controls:none] [--media-object-fit:cover]"
+        />
+        {/* <video
           autoPlay
           loop
           muted
           className="absolute top-0 h-full w-full object-cover"
-        >
+        > 
           <source src="/videos/Videography.mp4" type="video/mp4" />
-        </video>
+        </video>*/}
       </div>
     </section>
   );
